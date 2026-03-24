@@ -1,0 +1,12 @@
+E:\project Wed\ASCsolution\ASC.Utilities\bin\Debug\net8.0\ASC.Utilities.deps.json
+E:\project Wed\ASCsolution\ASC.Utilities\bin\Debug\net8.0\ASC.Utilities.dll
+E:\project Wed\ASCsolution\ASC.Utilities\bin\Debug\net8.0\ASC.Utilities.pdb
+E:\project Wed\ASCsolution\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.csproj.AssemblyReference.cache
+E:\project Wed\ASCsolution\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+E:\project Wed\ASCsolution\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.AssemblyInfoInputs.cache
+E:\project Wed\ASCsolution\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.AssemblyInfo.cs
+E:\project Wed\ASCsolution\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.csproj.CoreCompileInputs.cache
+E:\project Wed\ASCsolution\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.dll
+E:\project Wed\ASCsolution\ASC.Utilities\obj\Debug\net8.0\refint\ASC.Utilities.dll
+E:\project Wed\ASCsolution\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.pdb
+E:\project Wed\ASCsolution\ASC.Utilities\obj\Debug\net8.0\ref\ASC.Utilities.dll

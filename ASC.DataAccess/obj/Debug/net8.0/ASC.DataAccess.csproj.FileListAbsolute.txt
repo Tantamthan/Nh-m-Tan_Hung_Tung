@@ -1,0 +1,17 @@
+E:\project Wed\ASCsolution\ASC.DataAccess\bin\Debug\net8.0\ASC.DataAccess.deps.json
+E:\project Wed\ASCsolution\ASC.DataAccess\bin\Debug\net8.0\ASC.DataAccess.dll
+E:\project Wed\ASCsolution\ASC.DataAccess\bin\Debug\net8.0\ASC.DataAccess.pdb
+E:\project Wed\ASCsolution\ASC.DataAccess\bin\Debug\net8.0\ASC.Model.dll
+E:\project Wed\ASCsolution\ASC.DataAccess\bin\Debug\net8.0\ASC.Utilities.dll
+E:\project Wed\ASCsolution\ASC.DataAccess\bin\Debug\net8.0\ASC.Model.pdb
+E:\project Wed\ASCsolution\ASC.DataAccess\bin\Debug\net8.0\ASC.Utilities.pdb
+E:\project Wed\ASCsolution\ASC.DataAccess\obj\Debug\net8.0\ASC.DataAccess.csproj.AssemblyReference.cache
+E:\project Wed\ASCsolution\ASC.DataAccess\obj\Debug\net8.0\ASC.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\project Wed\ASCsolution\ASC.DataAccess\obj\Debug\net8.0\ASC.DataAccess.AssemblyInfoInputs.cache
+E:\project Wed\ASCsolution\ASC.DataAccess\obj\Debug\net8.0\ASC.DataAccess.AssemblyInfo.cs
+E:\project Wed\ASCsolution\ASC.DataAccess\obj\Debug\net8.0\ASC.DataAccess.csproj.CoreCompileInputs.cache
+E:\project Wed\ASCsolution\ASC.DataAccess\obj\Debug\net8.0\ASC.Data.47B3A96C.Up2Date
+E:\project Wed\ASCsolution\ASC.DataAccess\obj\Debug\net8.0\ASC.DataAccess.dll
+E:\project Wed\ASCsolution\ASC.DataAccess\obj\Debug\net8.0\refint\ASC.DataAccess.dll
+E:\project Wed\ASCsolution\ASC.DataAccess\obj\Debug\net8.0\ASC.DataAccess.pdb
+E:\project Wed\ASCsolution\ASC.DataAccess\obj\Debug\net8.0\ref\ASC.DataAccess.dll
