@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="ASC.business/ASC.business.csproj" Id="19627a9a-954e-45cd-ab7d-35b0ecafbd56" />
+  <Project Path="ASC.DataAccess/ASC.DataAccess.csproj" Id="7724dfc5-26e7-4347-9bdb-ed97b103835f" />
+  <Project Path="ASC.Model/ASC.Model.csproj" Id="2380c2f3-c933-4d5e-99d7-295d83c25666" />
+  <Project Path="ASC.Tests/ASC.Tests.csproj" />
+  <Project Path="ASC.Utilities/ASC.Utilities.csproj" Id="1afa41ef-bdeb-4ee4-908d-22455bcc2da6" />
+  <Project Path="ASCwed/ASCwed.csproj" />
+</Solution>

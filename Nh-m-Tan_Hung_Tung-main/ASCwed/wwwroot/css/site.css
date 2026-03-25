@@ -1,0 +1,110 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus,
+.form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* ===================== */
+/* Removes padding       */
+/* ===================== */
+.padding-0px {
+    padding: 0px !important;
+}
+
+/* ===================== */
+/* Logo in header        */
+/* ===================== */
+.nav-wrapper .brand-logo img {
+    height: 64px;
+    padding: 4px 0;
+}
+
+nav .brand-logo {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .nav-wrapper .brand-logo img {
+        height: 48px;
+    }
+}
+
+/* ===================== */
+/* Parallax              */
+/* ===================== */
+.parallax-container .section {
+    position: relative;
+    z-index: 1;
+}
+
+.parallax-container h5 {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+
+.parallax-container {
+    min-height: 400px;
+}
+
+#index-banner.parallax-container {
+    min-height: 500px;
+}
+
+/* ===================== */
+/* Navbar links          */
+/* ===================== */
+nav.white ul a {
+    color: #555555 !important;
+}
+
+    nav.white ul a:hover {
+        color: #000000 !important;
+        background-color: transparent !important;
+    }
+
+/* ======================================= */
+/* Secure Layout - Sidebar padding         */
+/* ======================================= */
+header.secureLayout, main.secureLayout, footer.secureLayout {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+    header.secureLayout, main.secureLayout, footer.secureLayout {
+        padding-left: 0;
+    }
+}
+
+/* ===================== */
+/* Selected Menu Item    */
+/* ===================== */
+.side-nav li.active {
+    background-color: #f5f5f5;
+}
+
+/* ===================== */
+/* Margin bottom         */
+/* ===================== */
+.margin-bottom-0px {
+    margin-bottom: 0px;
+}

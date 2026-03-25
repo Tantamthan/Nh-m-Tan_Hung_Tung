@@ -1,0 +1,706 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\project Wed\\ASCsolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\cofiguration\\applicationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\cofiguration\\applicationsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\data\\identityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\data\\identityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\data\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\data\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\data\\migrations\\20260324125209_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\data\\migrations\\20260324125209_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\data\\iidentityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\data\\iidentityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\ascwed.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\ascwed.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|e:\\project wed\\ascsolution\\asc.dataaccess\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|e:\\project wed\\ascsolution\\asc.dataaccess\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|e:\\project wed\\ascsolution\\asc.dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|e:\\project wed\\ascsolution\\asc.dataaccess\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|e:\\project wed\\ascsolution\\asc.model\\models\\masterdatavalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\models\\masterdatavalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|e:\\project wed\\ascsolution\\asc.model\\models\\masterdatakey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\models\\masterdatakey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|e:\\project wed\\ascsolution\\asc.model\\models\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\models\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|e:\\project wed\\ascsolution\\asc.model\\basetypes\\iaudittracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\basetypes\\iaudittracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AFA41EF-BDEB-4EE4-908D-22455BCC2DA6}|ASC.Utilities\\ASC.Utilities.csproj|e:\\project wed\\ascsolution\\asc.utilities\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AFA41EF-BDEB-4EE4-908D-22455BCC2DA6}|ASC.Utilities\\ASC.Utilities.csproj|solutionrelative:asc.utilities\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|e:\\project wed\\ascsolution\\asc.model\\basetypes\\constants .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\basetypes\\constants .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|e:\\project wed\\ascsolution\\asc.model\\basetypes\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\basetypes\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|e:\\project wed\\ascsolution\\asc.model\\asc.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\asc.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|e:\\project wed\\ascsolution\\asc.dataaccess\\asc.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\asc.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AFA41EF-BDEB-4EE4-908D-22455BCC2DA6}|ASC.Utilities\\ASC.Utilities.csproj|e:\\project wed\\ascsolution\\asc.utilities\\asc.utilities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1AFA41EF-BDEB-4EE4-908D-22455BCC2DA6}|ASC.Utilities\\ASC.Utilities.csproj|solutionrelative:asc.utilities\\asc.utilities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19627A9A-954E-45CD-AB7D-35B0ECAFBD56}|ASC.business\\ASC.business.csproj|e:\\project wed\\ascsolution\\asc.business\\asc.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{19627A9A-954E-45CD-AB7D-35B0ECAFBD56}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\asc.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19627A9A-954E-45CD-AB7D-35B0ECAFBD56}|ASC.business\\ASC.business.csproj|e:\\project wed\\ascsolution\\asc.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19627A9A-954E-45CD-AB7D-35B0ECAFBD56}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\views\\shared\\_masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\views\\shared\\_masterlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\wwwroot\\js\\materialize.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\wwwroot\\js\\materialize.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\wwwroot\\js\\init.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\wwwroot\\js\\init.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\wwwroot\\css\\materialize.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\wwwroot\\css\\materialize.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\services\\authmessagesender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\services\\authmessagesender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\services\\ismssender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\services\\ismssender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\services\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\services\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\ascwed.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\ascwed.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|e:\\project wed\\ascsolution\\ascwed\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "ASCwed\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T13:10:33.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "00000000000000_CreateIdentitySchema.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "RelativeToolTip": "ASCwed\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T13:10:27.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IdentitySeed.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\IdentitySeed.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Data\\IdentitySeed.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\IdentitySeed.cs",
+              "RelativeToolTip": "ASCwed\\Data\\IdentitySeed.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T12:50:57.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\ApplicationDbContext.cs*",
+              "RelativeToolTip": "ASCwed\\Data\\ApplicationDbContext.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvyIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T12:23:56.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationSettings.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Cofiguration\\ApplicationSettings.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Cofiguration\\ApplicationSettings.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Cofiguration\\ApplicationSettings.cs",
+              "RelativeToolTip": "ASCwed\\Cofiguration\\ApplicationSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T02:42:59.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Program.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Program.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Program.cs*",
+              "RelativeToolTip": "ASCwed\\Program.cs*",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T02:26:39.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\appsettings.json",
+              "RelativeDocumentMoniker": "ASCwed\\appsettings.json",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\appsettings.json",
+              "RelativeToolTip": "ASCwed\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-23T02:25:45.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20260324125209_InitialCreate.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\Migrations\\20260324125209_InitialCreate.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Data\\Migrations\\20260324125209_InitialCreate.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\Migrations\\20260324125209_InitialCreate.cs",
+              "RelativeToolTip": "ASCwed\\Data\\Migrations\\20260324125209_InitialCreate.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T12:52:11.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IIdentitySeed.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\IIdentitySeed.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Data\\IIdentitySeed.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Data\\IIdentitySeed.cs",
+              "RelativeToolTip": "ASCwed\\Data\\IIdentitySeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T12:48:54.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IunitOfWork.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
+              "RelativeToolTip": "ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T09:16:53.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.DataAccess\\Repository.cs",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\Repository.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.DataAccess\\Repository.cs",
+              "RelativeToolTip": "ASC.DataAccess\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T09:14:44.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Irepository.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "RelativeToolTip": "ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T09:10:29.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Views\\Home\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "ASCwed\\Views\\Home\\Dashboard.cshtml",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Views\\Home\\Dashboard.cshtml",
+              "RelativeToolTip": "ASCwed\\Views\\Home\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-24T07:40:15.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.DataAccess\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\UnitOfWork.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.DataAccess\\UnitOfWork.cs",
+              "RelativeToolTip": "ASC.DataAccess\\UnitOfWork.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T09:20:16.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ASCwed\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ASCwed\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAgwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-24T02:25:15.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MasterDataValue.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.Model\\Models\\MasterDataValue.cs",
+              "RelativeDocumentMoniker": "ASC.Model\\Models\\MasterDataValue.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.Model\\Models\\MasterDataValue.cs",
+              "RelativeToolTip": "ASC.Model\\Models\\MasterDataValue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T09:06:16.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "ASCwed\\Views\\_ViewStart.cshtml",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "ASCwed\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-23T02:25:57.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ASCwed.csproj",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\ASCwed.csproj",
+              "RelativeDocumentMoniker": "ASCwed\\ASCwed.csproj",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\ASCwed.csproj",
+              "RelativeToolTip": "ASCwed\\ASCwed.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-24T09:27:15.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MasterDataKey.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.Model\\Models\\MasterDataKey.cs",
+              "RelativeDocumentMoniker": "ASC.Model\\Models\\MasterDataKey.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.Model\\Models\\MasterDataKey.cs",
+              "RelativeToolTip": "ASC.Model\\Models\\MasterDataKey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T09:06:01.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ServiceRequest.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.Model\\Models\\ServiceRequest.cs",
+              "RelativeDocumentMoniker": "ASC.Model\\Models\\ServiceRequest.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.Model\\Models\\ServiceRequest.cs",
+              "RelativeToolTip": "ASC.Model\\Models\\ServiceRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T08:56:54.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IAuditTracker.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.Model\\BaseTypes\\IAuditTracker.cs",
+              "RelativeDocumentMoniker": "ASC.Model\\BaseTypes\\IAuditTracker.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.Model\\BaseTypes\\IAuditTracker.cs",
+              "RelativeToolTip": "ASC.Model\\BaseTypes\\IAuditTracker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T08:55:46.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Constants .cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.Model\\BaseTypes\\Constants .cs",
+              "RelativeDocumentMoniker": "ASC.Model\\BaseTypes\\Constants .cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.Model\\BaseTypes\\Constants .cs",
+              "RelativeToolTip": "ASC.Model\\BaseTypes\\Constants .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T08:53:14.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.Model\\BaseTypes\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "ASC.Model\\BaseTypes\\BaseEntity.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.Model\\BaseTypes\\BaseEntity.cs",
+              "RelativeToolTip": "ASC.Model\\BaseTypes\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T08:52:53.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ASC.Model.csproj",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.Model\\ASC.Model.csproj",
+              "RelativeDocumentMoniker": "ASC.Model\\ASC.Model.csproj",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.Model\\ASC.Model.csproj",
+              "RelativeToolTip": "ASC.Model\\ASC.Model.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-24T08:52:09.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ASC.Utilities.csproj",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.Utilities\\ASC.Utilities.csproj",
+              "RelativeDocumentMoniker": "ASC.Utilities\\ASC.Utilities.csproj",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.Utilities\\ASC.Utilities.csproj",
+              "RelativeToolTip": "ASC.Utilities\\ASC.Utilities.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-24T08:48:50.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ASC.business.csproj",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.business\\ASC.business.csproj",
+              "RelativeDocumentMoniker": "ASC.business\\ASC.business.csproj",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.business\\ASC.business.csproj",
+              "RelativeToolTip": "ASC.business\\ASC.business.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-24T08:48:11.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ASC.DataAccess.csproj",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.DataAccess\\ASC.DataAccess.csproj",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\ASC.DataAccess.csproj",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.DataAccess\\ASC.DataAccess.csproj",
+              "RelativeToolTip": "ASC.DataAccess\\ASC.DataAccess.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-24T08:47:58.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.Utilities\\Class1.cs",
+              "RelativeDocumentMoniker": "ASC.Utilities\\Class1.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.Utilities\\Class1.cs",
+              "RelativeToolTip": "ASC.Utilities\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T08:44:34.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASC.business\\Class1.cs",
+              "RelativeDocumentMoniker": "ASC.business\\Class1.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASC.business\\Class1.cs",
+              "RelativeToolTip": "ASC.business\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T08:41:04.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "site.js",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "ASCwed\\wwwroot\\js\\site.js",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "ASCwed\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-24T07:29:31.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "materialize.js",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\wwwroot\\js\\materialize.js",
+              "RelativeDocumentMoniker": "ASCwed\\wwwroot\\js\\materialize.js",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\wwwroot\\js\\materialize.js",
+              "RelativeToolTip": "ASCwed\\wwwroot\\js\\materialize.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-24T07:29:33.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "init.js",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\wwwroot\\js\\init.js",
+              "RelativeDocumentMoniker": "ASCwed\\wwwroot\\js\\init.js",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\wwwroot\\js\\init.js",
+              "RelativeToolTip": "ASCwed\\wwwroot\\js\\init.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-03-24T07:28:40.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "site.css",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ASCwed\\wwwroot\\css\\site.css",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ASCwed\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAEoAAAAAAAAAAADwv2AAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-24T07:10:03.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "materialize.css",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\wwwroot\\css\\materialize.css",
+              "RelativeDocumentMoniker": "ASCwed\\wwwroot\\css\\materialize.css",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\wwwroot\\css\\materialize.css",
+              "RelativeToolTip": "ASCwed\\wwwroot\\css\\materialize.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-24T07:10:29.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_MasterLayout.cshtml",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Views\\Shared\\_MasterLayout.cshtml",
+              "RelativeDocumentMoniker": "ASCwed\\Views\\Shared\\_MasterLayout.cshtml",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Views\\Shared\\_MasterLayout.cshtml",
+              "RelativeToolTip": "ASCwed\\Views\\Shared\\_MasterLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-24T06:47:49.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ASCwed\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ASCwed\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAgwKgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-24T01:42:20.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ASCwed\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwB4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T02:00:42.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "ASCwed\\appsettings.Production.json",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\appsettings.Production.json",
+              "RelativeToolTip": "ASCwed\\appsettings.Production.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-24T02:28:51.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ASCwed",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\ASCwed.csproj",
+              "RelativeDocumentMoniker": "ASCwed\\ASCwed.csproj",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\ASCwed.csproj",
+              "RelativeToolTip": "ASCwed\\ASCwed.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-24T02:30:43.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IEmailSender.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Services\\IEmailSender.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Services\\IEmailSender.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Services\\IEmailSender.cs",
+              "RelativeToolTip": "ASCwed\\Services\\IEmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T04:46:20.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ISmsSender.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Services\\ISmsSender.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Services\\ISmsSender.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Services\\ISmsSender.cs",
+              "RelativeToolTip": "ASCwed\\Services\\ISmsSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T04:56:37.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AuthMessageSender.cs",
+              "DocumentMoniker": "E:\\project Wed\\ASCsolution\\ASCwed\\Services\\AuthMessageSender.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Services\\AuthMessageSender.cs",
+              "ToolTip": "E:\\project Wed\\ASCsolution\\ASCwed\\Services\\AuthMessageSender.cs",
+              "RelativeToolTip": "ASCwed\\Services\\AuthMessageSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T04:56:52.058Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

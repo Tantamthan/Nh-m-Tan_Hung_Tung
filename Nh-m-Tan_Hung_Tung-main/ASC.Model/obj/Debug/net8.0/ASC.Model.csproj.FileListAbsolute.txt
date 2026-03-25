@@ -1,0 +1,24 @@
+E:\project Wed\ASCsolution\ASC.Model\bin\Debug\net8.0\ASC.Model.deps.json
+E:\project Wed\ASCsolution\ASC.Model\bin\Debug\net8.0\ASC.Model.dll
+E:\project Wed\ASCsolution\ASC.Model\bin\Debug\net8.0\ASC.Model.pdb
+E:\project Wed\ASCsolution\ASC.Model\obj\Debug\net8.0\ASC.Model.csproj.AssemblyReference.cache
+E:\project Wed\ASCsolution\ASC.Model\obj\Debug\net8.0\ASC.Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\project Wed\ASCsolution\ASC.Model\obj\Debug\net8.0\ASC.Model.AssemblyInfoInputs.cache
+E:\project Wed\ASCsolution\ASC.Model\obj\Debug\net8.0\ASC.Model.AssemblyInfo.cs
+E:\project Wed\ASCsolution\ASC.Model\obj\Debug\net8.0\ASC.Model.csproj.CoreCompileInputs.cache
+E:\project Wed\ASCsolution\ASC.Model\obj\Debug\net8.0\ASC.Model.dll
+E:\project Wed\ASCsolution\ASC.Model\obj\Debug\net8.0\refint\ASC.Model.dll
+E:\project Wed\ASCsolution\ASC.Model\obj\Debug\net8.0\ASC.Model.pdb
+E:\project Wed\ASCsolution\ASC.Model\obj\Debug\net8.0\ref\ASC.Model.dll
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\bin\Debug\net8.0\ASC.Model.deps.json
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\bin\Debug\net8.0\ASC.Model.dll
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\bin\Debug\net8.0\ASC.Model.pdb
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\ASC.Model.csproj.AssemblyReference.cache
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\ASC.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\ASC.Model.AssemblyInfoInputs.cache
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\ASC.Model.AssemblyInfo.cs
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\ASC.Model.csproj.CoreCompileInputs.cache
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\ASC.Model.dll
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\refint\ASC.Model.dll
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\ASC.Model.pdb
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\ref\ASC.Model.dll
