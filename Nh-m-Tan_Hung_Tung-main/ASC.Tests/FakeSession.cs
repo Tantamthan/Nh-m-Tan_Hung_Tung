@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
-using System.Net.NetworkInformation;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -42,6 +41,13 @@ public class FakeSession : ISession
 
     public bool TryGetValue(string key, out byte[] value)
     {
-        return _sessionStorage.TryGetValue(key, out value);
+        if (_sessionStorage.TryGetValue(key, out var storedValue) && storedValue is not null)
+        {
+            value = storedValue;
+            return true;
+        }
+
+        value = Array.Empty<byte>();
+        return false;
     }
 }

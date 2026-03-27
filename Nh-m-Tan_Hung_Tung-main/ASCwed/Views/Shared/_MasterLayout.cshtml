@@ -1,28 +1,30 @@
-﻿@using Microsoft.Extensions.Options;
-@using ASCwed.Cofiguration;
-@inject IOptions<ApplicationSettings> _configurationSettings
+@using ASCwed.Cofiguration
+@using Microsoft.Extensions.Options
+@inject IOptions<ApplicationSettings> Settings
+
+@{
+    var title = Settings.Value.ApplicationName ?? Settings.Value.ApplicationTitle ?? "Automobile Service Center";
+}
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <title>@_configurationSettings.Value.ApplicationName</title>
+    <title>@title</title>
 
-    <!-- CSS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link href="~/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="~/css/site.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/css/materialize.css" asp-append-version="true" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/css/site.css" asp-append-version="true" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 <body>
-
-    <!-- Render Body -->
     @RenderBody()
 
-    <!-- JS -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/js/materialize.js"></script>
-    <script src="~/js/init.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/materialize.js" asp-append-version="true"></script>
+    <script src="~/js/init.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)
 </body>

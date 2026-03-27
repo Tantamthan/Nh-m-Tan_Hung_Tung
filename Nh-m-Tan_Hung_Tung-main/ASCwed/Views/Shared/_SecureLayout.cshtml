@@ -1,5 +1,73 @@
+@using ASC.Utilities.Extensions
+@using ASCwed.Cofiguration
+@using Microsoft.Extensions.Options
+@inject IOptions<ApplicationSettings> Settings
+
 @{
-    Layout = "_Layout";
+    Layout = "_MasterLayout";
+    var applicationName = Settings.Value.ApplicationName ?? Settings.Value.ApplicationTitle ?? "Automobile Service Center";
+    var currentUser = User.ToCurrentUser();
 }
 
-@RenderBody()
+<header class="secureLayout">
+    <nav class="blue-grey darken-3">
+        <div class="nav-wrapper row margin-bottom-0px">
+            <div class="col s12 valign-wrapper">
+                <a href="#" id="secureMenuTrigger" data-target="nav-mobile" class="sidenav-trigger show-on-large left-space secure-menu-trigger" aria-label="Toggle navigation">
+                    <i class="material-icons">menu</i>
+                </a>
+                <a href="/" class="brand-logo secure-brand">
+                    <img src="~/images/logo.jpg" alt="ASC Logo" />
+                    <span>@applicationName</span>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><span class="secure-user-label">@currentUser.UserName</span></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @await Component.InvokeAsync("LeftNavigation")
+
+    <form id="logout_form" method="post" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="/"></form>
+    <form id="resetPassword_form" method="post" asp-area="Identity" asp-page="/Account/InitiateResetPassword"></form>
+</header>
+
+<main class="secureLayout secure-main">
+    <div class="container-fluid secure-container">
+        @RenderBody()
+    </div>
+</main>
+
+<footer class="page-footer blue-grey darken-4 secureLayout">
+    <div class="container">
+        <div class="row margin-bottom-0px">
+            <div class="col s12">
+                <span class="grey-text text-lighten-3">
+                    Secure workspace for authenticated ASC users.
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+    <script type="text/javascript">
+        $(function () {
+            $('#ancrLogout').click(function () {
+                $('#logout_form').submit();
+            });
+
+            $('#ancrResetPassword').click(function () {
+                $('#resetPassword_form').submit();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+            $('.sidenav').sidenav();
+        });
+    </script>
+}

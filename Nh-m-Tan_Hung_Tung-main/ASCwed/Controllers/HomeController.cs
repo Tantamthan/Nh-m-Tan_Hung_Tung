@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 namespace ASCwed.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : AnonymousController
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IOptions<ApplicationSettings> _settings;
@@ -19,25 +19,11 @@ namespace ASCwed.Controllers
 
         public IActionResult Index()
         {
-          
-            HttpContext.Session.SetString("name", "Hung");
-
-        
-            var sessionValue = HttpContext.Session.GetString("name");
-
-          
-            var appName = _settings.Value.ApplicationName ?? "Default App";
-
-           
+            var appName = _settings.Value.ApplicationName ?? _settings.Value.ApplicationTitle ?? "Default App";
             return View(model: appName);
         }
 
         public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        public IActionResult Dashboard()
         {
             return View();
         }
