@@ -16,3 +16,8 @@
 
 https://github.com/user-attachments/assets/f6cc972a-fb74-465d-aab3-0ab420db1a38
 
+##  LAP 8
+
+
+https://github.com/user-attachments/assets/e67d6e4e-d4a1-4cde-b252-aa04ff598d76
+
