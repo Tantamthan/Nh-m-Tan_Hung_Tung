@@ -1,0 +1,57 @@
+E:\project Wed\ASCsolution\ASC.business\bin\Debug\net8.0\ASC.business.deps.json
+E:\project Wed\ASCsolution\ASC.business\bin\Debug\net8.0\ASC.business.dll
+E:\project Wed\ASCsolution\ASC.business\bin\Debug\net8.0\ASC.business.pdb
+E:\project Wed\ASCsolution\ASC.business\bin\Debug\net8.0\ASC.DataAccess.dll
+E:\project Wed\ASCsolution\ASC.business\bin\Debug\net8.0\ASC.Model.dll
+E:\project Wed\ASCsolution\ASC.business\bin\Debug\net8.0\ASC.Utilities.dll
+E:\project Wed\ASCsolution\ASC.business\bin\Debug\net8.0\ASC.DataAccess.pdb
+E:\project Wed\ASCsolution\ASC.business\bin\Debug\net8.0\ASC.Model.pdb
+E:\project Wed\ASCsolution\ASC.business\bin\Debug\net8.0\ASC.Utilities.pdb
+E:\project Wed\ASCsolution\ASC.business\obj\Debug\net8.0\ASC.business.csproj.AssemblyReference.cache
+E:\project Wed\ASCsolution\ASC.business\obj\Debug\net8.0\ASC.business.GeneratedMSBuildEditorConfig.editorconfig
+E:\project Wed\ASCsolution\ASC.business\obj\Debug\net8.0\ASC.business.AssemblyInfoInputs.cache
+E:\project Wed\ASCsolution\ASC.business\obj\Debug\net8.0\ASC.business.AssemblyInfo.cs
+E:\project Wed\ASCsolution\ASC.business\obj\Debug\net8.0\ASC.business.csproj.CoreCompileInputs.cache
+E:\project Wed\ASCsolution\ASC.business\obj\Debug\net8.0\ASC.busi.A2FCAD03.Up2Date
+E:\project Wed\ASCsolution\ASC.business\obj\Debug\net8.0\ASC.business.dll
+E:\project Wed\ASCsolution\ASC.business\obj\Debug\net8.0\refint\ASC.business.dll
+E:\project Wed\ASCsolution\ASC.business\obj\Debug\net8.0\ASC.business.pdb
+E:\project Wed\ASCsolution\ASC.business\obj\Debug\net8.0\ref\ASC.business.dll
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.business.deps.json
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.business.dll
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.business.pdb
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.DataAccess.dll
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.Model.dll
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.Utilities.dll
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.DataAccess.pdb
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.Model.pdb
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.Utilities.pdb
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.csproj.AssemblyReference.cache
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.AssemblyInfoInputs.cache
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.AssemblyInfo.cs
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.csproj.CoreCompileInputs.cache
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.busi.A2FCAD03.Up2Date
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.dll
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\refint\ASC.business.dll
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.pdb
+C:\Users\pc\Downloads\Nh-m-Tan_Hung_Tung-main\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ref\ASC.business.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.business.deps.json
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.business.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.business.pdb
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.DataAccess.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.Model.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.Utilities.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.DataAccess.pdb
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.Model.pdb
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\bin\Debug\net8.0\ASC.Utilities.pdb
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.csproj.AssemblyReference.cache
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.GeneratedMSBuildEditorConfig.editorconfig
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.AssemblyInfoInputs.cache
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.AssemblyInfo.cs
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.csproj.CoreCompileInputs.cache
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.busi.A2FCAD03.Up2Date
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\refint\ASC.business.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.pdb
+E:\project Wed\Nh-m-Tan_Hung_Tung-lab8\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ref\ASC.business.dll

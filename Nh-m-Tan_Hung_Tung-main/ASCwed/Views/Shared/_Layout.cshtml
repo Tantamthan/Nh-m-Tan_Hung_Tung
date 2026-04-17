@@ -1,0 +1,90 @@
+@using ASCwed.Cofiguration
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.Extensions.Options
+@inject IOptions<ApplicationSettings> Settings
+@inject SignInManager<IdentityUser> SignInManager
+
+@{
+    Layout = "_MasterLayout";
+    var applicationName = Settings.Value.ApplicationName ?? Settings.Value.ApplicationTitle ?? "Automobile Service Center";
+}
+
+<header>
+    <nav class="white z-depth-0">
+        <div class="nav-wrapper container">
+            <a href="/" class="brand-logo brand-logo-public">
+                <img src="~/images/logo.jpg" alt="ASC Logo" />
+                <span>@applicationName</span>
+            </a>
+
+            <a href="#" data-target="public-mobile-menu" class="sidenav-trigger blue-grey-text text-darken-3">
+                <i class="material-icons">menu</i>
+            </a>
+
+            <ul class="right hide-on-med-and-down public-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/Home/Privacy">Privacy</a></li>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <li><a href="/ServiceRequests/Dashboard/Dashboard">Dashboard</a></li>
+                    <li>
+                        <form id="public_logout_form" method="post" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="/">
+                            <button type="submit" class="btn-flat nav-button">Logout</button>
+                        </form>
+                    </li>
+                }
+                else
+                {
+                    <li><a class="btn blue-grey darken-2 waves-effect waves-light" href="/Identity/Account/Login">Login</a></li>
+                }
+            </ul>
+        </div>
+    </nav>
+
+    <ul id="public-mobile-menu" class="sidenav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/Home/Privacy">Privacy</a></li>
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <li><a href="/ServiceRequests/Dashboard/Dashboard">Dashboard</a></li>
+            <li>
+                <form id="public_logout_form_mobile" method="post" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="/">
+                    <button type="submit" class="btn-flat nav-button full-width">Logout</button>
+                </form>
+            </li>
+        }
+        else
+        {
+            <li><a href="/Identity/Account/Login">Login</a></li>
+        }
+    </ul>
+</header>
+
+<main class="public-main">
+    @RenderBody()
+</main>
+
+<footer class="page-footer blue-grey darken-3">
+    <div class="container">
+        <div class="row margin-bottom-0px">
+            <div class="col s12 m7">
+                <h5 class="white-text">Automobile Service Center</h5>
+                <p class="grey-text text-lighten-3">
+                    ASP.NET Core Identity secured portal for managing service requests and user administration.
+                </p>
+            </div>
+            <div class="col s12 m5">
+                <h5 class="white-text">Quick Access</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="/">Home</a></li>
+                    <li><a class="grey-text text-lighten-3" href="/Identity/Account/Login">Login</a></li>
+                    <li><a class="grey-text text-lighten-3" href="/Identity/Account/ForgotPassword">Forgot Password</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}

@@ -1,0 +1,336 @@
+@model ASCwed.Areas.Accounts.Models.CustomersViewModel
+@{
+    ViewData["Title"] = "Quản lý Khách hàng";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/customers.css" asp-append-version="true" />
+}
+
+<!-- Toast Notifications -->
+@if (TempData["Success"] != null)
+{
+    <div id="toast-success" class="asc-toast asc-toast--success">
+        <span class="material-icons">check_circle</span>
+        <span>@TempData["Success"]</span>
+    </div>
+}
+@if (TempData["Error"] != null)
+{
+    <div id="toast-error" class="asc-toast asc-toast--error">
+        <span class="material-icons">error</span>
+        <span>@TempData["Error"]</span>
+    </div>
+}
+
+<div class="se-page">
+    <!-- Page Header -->
+    <div class="se-page-header">
+        <div class="se-page-header__left">
+            <span class="material-icons se-page-header__icon">people</span>
+            <div>
+                <h1 class="se-page-header__title">Quản lý Khách hàng</h1>
+                <p class="se-page-header__subtitle">Xem danh sách và quản lý trạng thái tài khoản người dùng</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Cards -->
+    <div class="se-stats">
+        <div class="se-stat-card se-stat-card--blue">
+            <span class="material-icons">group</span>
+            <div class="se-stat-card__info">
+                <span class="se-stat-card__value">@(Model.Customers?.Count ?? 0)</span>
+                <span class="se-stat-card__label">Tổng khách hàng</span>
+            </div>
+        </div>
+        <div class="se-stat-card se-stat-card--green">
+            <span class="material-icons">verified_user</span>
+            <div class="se-stat-card__info">
+                <span class="se-stat-card__value">@(Model.Customers?.Count(c => c.IsActive) ?? 0)</span>
+                <span class="se-stat-card__label">Đang hoạt động</span>
+            </div>
+        </div>
+        <div class="se-stat-card se-stat-card--red">
+            <span class="material-icons">block</span>
+            <div class="se-stat-card__info">
+                <span class="se-stat-card__value">@(Model.Customers?.Count(c => !c.IsActive) ?? 0)</span>
+                <span class="se-stat-card__label">Đã vô hiệu hóa</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Table -->
+    <div class="se-card">
+        <div class="se-card__header">
+            <div class="se-card__title">
+                <span class="material-icons">list</span>
+                Danh sách khách hàng
+            </div>
+            <div class="se-search-box">
+                <span class="material-icons">search</span>
+                <input type="text" id="searchInput" placeholder="Tìm kiếm..." oninput="filterTable()" />
+            </div>
+        </div>
+
+        @if (Model.Customers == null || !Model.Customers.Any())
+        {
+            <div class="se-empty-state">
+                <span class="material-icons">person_search</span>
+                <p>Chưa có khách hàng nào trong hệ thống.</p>
+            </div>
+        }
+        else
+        {
+            <div class="se-table-wrapper">
+                <table class="se-table" id="customerTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Tên đăng nhập</th>
+                            <th>Email</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (int i = 0; i < Model.Customers.Count; i++)
+                        {
+                            var user = Model.Customers[i];
+                            <tr class="se-table__row @(!user.IsActive ? "se-table__row--inactive" : "")">
+                                <td class="se-table__num">@(i + 1)</td>
+                                <td>
+                                    <div class="se-engineer-info">
+                                        <div class="se-avatar @(!user.IsActive ? "se-avatar--inactive" : "")">
+                                            @user.UserName[0].ToString().ToUpper()
+                                        </div>
+                                        <span class="se-engineer-info__name">@user.UserName</span>
+                                    </div>
+                                </td>
+                                <td class="se-table__email">@user.Email</td>
+                                <td>
+                                    @if (user.IsActive)
+                                    {
+                                        <span class="se-badge se-badge--active">
+                                            <span class="se-badge__dot"></span>Hoạt động
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="se-badge se-badge--inactive">
+                                            <span class="se-badge__dot"></span>Vô hiệu
+                                        </span>
+                                    }
+                                </td>
+                                <td>
+                                    <div class="se-actions">
+                                        <button class="se-btn-icon se-btn-icon--edit"
+                                                onclick="openEditModal('@user.UserName', '@user.Email', @user.IsActive.ToString().ToLower())"
+                                                title="Cập nhật trạng thái">
+                                            <span class="material-icons">edit</span>
+                                        </button>
+                                        @if (user.IsActive)
+                                        {
+                                            <button class="se-btn-icon se-btn-icon--deactivate"
+                                                    onclick="confirmDeactivate('@user.UserName', '@user.Email')"
+                                                    title="Vô hiệu hóa tài khoản">
+                                                <span class="material-icons">block</span>
+                                            </button>
+                                        }
+                                        else
+                                        {
+                                            <button class="se-btn-icon se-btn-icon--activate"
+                                                    onclick="confirmActivate('@user.UserName', '@user.Email')"
+                                                    title="Kích hoạt lại tài khoản">
+                                                <span class="material-icons">check_circle</span>
+                                            </button>
+                                        }
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- ============================================================
+     MODAL: CẬP NHẬT TRẠNG THÁI KHÁCH HÀNG
+     ============================================================ -->
+<div id="editModal" class="se-modal-overlay">
+    <div class="se-modal">
+        <div class="se-modal__header">
+            <div class="se-modal__title">
+                <span class="material-icons">manage_accounts</span>
+                Cập nhật thông tin khách hàng
+            </div>
+            <button type="button" class="se-modal__close" onclick="closeEditModal()">
+                <span class="material-icons">close</span>
+            </button>
+        </div>
+
+        <form asp-action="UpdateCustomer" asp-area="Accounts" asp-controller="Account"
+              method="post" class="se-modal__body">
+            @Html.AntiForgeryToken()
+            <input type="hidden" id="editUserName" name="UserName" />
+
+            <div class="se-info-badge">
+                <span class="material-icons">info</span>
+                Khi cập nhật, hệ thống sẽ tự động gửi thông báo đến email của khách hàng.
+            </div>
+
+            <div class="se-form-group">
+                <label class="se-label">
+                    <span class="material-icons">person</span>Tên đăng nhập
+                </label>
+                <input id="editUserNameDisplay" class="se-input se-input--readonly" readonly />
+            </div>
+
+            <div class="se-form-group">
+                <label for="editEmail" class="se-label">
+                    <span class="material-icons">email</span>Email
+                </label>
+                <input type="email" id="editEmail" name="Email" class="se-input"
+                       placeholder="Nhập địa chỉ email..." required />
+            </div>
+
+            <div class="se-switch-group">
+                <label class="se-switch">
+                    <input type="checkbox" id="editIsActive" name="IsActive" value="true" />
+                    <span class="se-switch__slider"></span>
+                </label>
+                <span class="se-switch-label" id="editStatusLabel">Tài khoản đang hoạt động</span>
+            </div>
+
+            <div class="se-modal__footer">
+                <button type="button" class="se-btn se-btn--ghost" onclick="closeEditModal()">Hủy</button>
+                <button type="submit" class="se-btn se-btn--primary">
+                    <span class="material-icons">save</span>Lưu thay đổi
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- ============================================================
+     MODAL: XÁC NHẬN VÔ HIỆU HÓA / KÍCH HOẠT
+     ============================================================ -->
+<div id="confirmModal" class="se-modal-overlay">
+    <div class="se-modal se-modal--sm">
+        <div class="se-modal__header">
+            <div class="se-modal__title">
+                <span class="material-icons" id="confirmModalIcon">warning</span>
+                <span id="confirmModalTitleText">Xác nhận</span>
+            </div>
+            <button type="button" class="se-modal__close" onclick="closeConfirmModal()">
+                <span class="material-icons">close</span>
+            </button>
+        </div>
+        <form asp-action="UpdateCustomer" asp-area="Accounts" asp-controller="Account"
+              method="post" class="se-modal__body">
+            @Html.AntiForgeryToken()
+            <p id="confirmMessage" class="se-confirm-message"></p>
+            <input type="hidden" id="confirmUserNameInput" name="UserName" />
+            <input type="hidden" id="confirmEmailInput" name="Email" />
+            <input type="hidden" id="confirmIsActiveInput" name="IsActive" />
+            <div class="se-modal__footer">
+                <button type="button" class="se-btn se-btn--ghost" onclick="closeConfirmModal()">Hủy</button>
+                <button type="submit" class="se-btn" id="confirmSubmitBtn">Xác nhận</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+<script>
+    // ============================================================
+    // MODAL: EDIT
+    // ============================================================
+    function openEditModal(userName, email, isActive) {
+        document.getElementById('editUserName').value = userName;
+        document.getElementById('editUserNameDisplay').value = userName;
+        document.getElementById('editEmail').value = email;
+        var cb = document.getElementById('editIsActive');
+        cb.checked = isActive;
+        updateStatusLabel(isActive);
+        cb.onchange = function() { updateStatusLabel(this.checked); };
+        document.getElementById('editModal').classList.add('se-modal--open');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeEditModal() {
+        document.getElementById('editModal').classList.remove('se-modal--open');
+        document.body.style.overflow = '';
+    }
+    function updateStatusLabel(isActive) {
+        document.getElementById('editStatusLabel').textContent =
+            isActive ? 'Tài khoản đang hoạt động' : 'Tài khoản bị vô hiệu hóa';
+    }
+
+    // ============================================================
+    // MODAL: CONFIRM DEACTIVATE / ACTIVATE
+    // ============================================================
+    function confirmDeactivate(userName, email) {
+        document.getElementById('confirmModalIcon').textContent = 'block';
+        document.getElementById('confirmModalTitleText').textContent = 'Vô hiệu hóa tài khoản';
+        document.getElementById('confirmMessage').innerHTML =
+            'Bạn có chắc muốn <strong>vô hiệu hóa</strong> tài khoản của <strong>' + userName + '</strong>?<br/>' +
+            '<small style="color:#888">Khách hàng sẽ không thể đăng nhập nhưng tài khoản vẫn được lưu giữ.</small>';
+        document.getElementById('confirmUserNameInput').value = userName;
+        document.getElementById('confirmEmailInput').value = email;
+        document.getElementById('confirmIsActiveInput').value = 'false';
+        var btn = document.getElementById('confirmSubmitBtn');
+        btn.className = 'se-btn se-btn--danger';
+        btn.innerHTML = '<span class="material-icons">block</span>Vô hiệu hóa';
+        document.getElementById('confirmModal').classList.add('se-modal--open');
+        document.body.style.overflow = 'hidden';
+    }
+    function confirmActivate(userName, email) {
+        document.getElementById('confirmModalIcon').textContent = 'check_circle';
+        document.getElementById('confirmModalTitleText').textContent = 'Kích hoạt tài khoản';
+        document.getElementById('confirmMessage').innerHTML =
+            'Bạn có chắc muốn <strong>kích hoạt lại</strong> tài khoản của <strong>' + userName + '</strong>?<br/>' +
+            '<small style="color:#888">Khách hàng sẽ có thể đăng nhập bình thường.</small>';
+        document.getElementById('confirmUserNameInput').value = userName;
+        document.getElementById('confirmEmailInput').value = email;
+        document.getElementById('confirmIsActiveInput').value = 'true';
+        var btn = document.getElementById('confirmSubmitBtn');
+        btn.className = 'se-btn se-btn--success';
+        btn.innerHTML = '<span class="material-icons">check_circle</span>Kích hoạt';
+        document.getElementById('confirmModal').classList.add('se-modal--open');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeConfirmModal() {
+        document.getElementById('confirmModal').classList.remove('se-modal--open');
+        document.body.style.overflow = '';
+    }
+
+    // Close on backdrop click
+    document.querySelectorAll('.se-modal-overlay').forEach(function(overlay) {
+        overlay.addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.remove('se-modal--open');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
+    // ============================================================
+    // TABLE SEARCH
+    // ============================================================
+    function filterTable() {
+        var query = document.getElementById('searchInput').value.toLowerCase();
+        document.querySelectorAll('#customerTable tbody tr').forEach(function(row) {
+            row.style.display = row.textContent.toLowerCase().includes(query) ? '' : 'none';
+        });
+    }
+
+    // ============================================================
+    // AUTO-DISMISS TOASTS
+    // ============================================================
+    setTimeout(function() {
+        document.querySelectorAll('.asc-toast').forEach(function(t) { t.remove(); });
+    }, 4000);
+</script>
+}
