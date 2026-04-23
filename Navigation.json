@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "title": "Dashboard",
+      "icon": "bi bi-speedometer2",
+      "area": "ServiceRequests",
+      "controller": "Dashboard",
+      "action": "Dashboard",
+      "userRoles": [ "Admin", "Engineer", "User" ]
+    },
+    {
+      "title": "User Administration",
+      "icon": "bi bi-people",
+      "userRoles": [ "Admin" ],
+      "children": [
+        {
+          "title": "Customers",
+          "area": "ServiceRequests",
+          "controller": "Menu",
+          "action": "Customers",
+          "userRoles": [ "Admin" ]
+        },
+        {
+          "title": "Service Engineers",
+          "area": "ServiceRequests",
+          "controller": "Menu",
+          "action": "ServiceEngineers",
+          "userRoles": [ "Admin" ]
+        }
+      ]
+    },
+    {
+      "title": "Service Requests",
+      "icon": "bi bi-wrench-adjustable",
+      "userRoles": [ "Admin", "Engineer" ],
+      "children": [
+        {
+          "title": "New Service Request",
+          "area": "ServiceRequests",
+          "controller": "Menu",
+          "action": "NewServiceRequest",
+          "userRoles": [ "Admin", "Engineer" ]
+        }
+      ]
+    },
+    {
+      "title": "Service Notifications",
+      "icon": "bi bi-bell",
+      "area": "ServiceRequests",
+      "controller": "Menu",
+      "action": "ServiceNotifications",
+      "userRoles": [ "Admin", "Engineer", "User" ]
+    },
+    {
+      "title": "Promotions",
+      "icon": "bi bi-megaphone",
+      "area": "ServiceRequests",
+      "controller": "Menu",
+      "action": "Promotions",
+      "userRoles": [ "Admin", "User" ]
+    },
+    {
+      "title": "Master Data",
+      "icon": "bi bi-database",
+      "userRoles": [ "Admin" ],
+      "children": [
+        {
+          "title": "Master Keys",
+          "area": "ServiceRequests",
+          "controller": "Menu",
+          "action": "MasterKeys",
+          "userRoles": [ "Admin" ]
+        },
+        {
+          "title": "Master Values",
+          "area": "ServiceRequests",
+          "controller": "Menu",
+          "action": "MasterValues",
+          "userRoles": [ "Admin" ]
+        }
+      ]
+    },
+    {
+      "title": "Settings",
+      "icon": "bi bi-gear",
+      "userRoles": [ "Admin", "Engineer", "User" ],
+      "children": [
+        {
+          "title": "Profile",
+          "area": "ServiceRequests",
+          "controller": "Menu",
+          "action": "Profile",
+          "userRoles": [ "Admin", "Engineer", "User" ]
+        },
+        {
+          "title": "Reset Password",
+          "clientAction": "reset-password",
+          "userRoles": [ "Admin", "Engineer", "User" ]
+        }
+      ]
+    },
+    {
+      "title": "Logout",
+      "icon": "bi bi-box-arrow-right",
+      "clientAction": "logout",
+      "userRoles": [ "Admin", "Engineer", "User" ]
+    }
+  ]
+}

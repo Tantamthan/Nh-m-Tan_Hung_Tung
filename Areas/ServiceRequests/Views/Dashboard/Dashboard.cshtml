@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<section class="dashboard-hero">
+    <div>
+        <span class="eyebrow">Secure Area</span>
+        <h1>Service Request Dashboard</h1>
+        <p class="lead">
+            Khu vực này chỉ dành cho người dùng đã đăng nhập. Session hiện tại đã lưu `CurrentUser`
+            và menu bên trái được lọc theo role của tài khoản đang hoạt động.
+        </p>
+    </div>
+    <div class="dashboard-summary">
+        <div class="summary-card">
+            <h2>@ViewData["CurrentUserName"]</h2>
+            <p>Tài khoản đang đăng nhập</p>
+        </div>
+        <div class="summary-card">
+            <h2>@ViewData["CurrentUserRoles"]</h2>
+            <p>Role được cấp</p>
+        </div>
+    </div>
+</section>
+
+<section class="content-card-grid">
+    <article class="content-card">
+        <h3>Identity + Role</h3>
+        <p>Hệ thống đã seed sẵn role `Admin`, `Engineer`, `User` và tự động tạo tài khoản mẫu lần chạy đầu.</p>
+    </article>
+    <article class="content-card">
+        <h3>Session</h3>
+        <p>Thông tin `CurrentUser` được đưa vào session sau khi đăng nhập và tự bù lại nếu session hết nhưng cookie còn hiệu lực.</p>
+    </article>
+    <article class="content-card">
+        <h3>Navigation</h3>
+        <p>Menu trái lấy từ `Navigation.json`, cache bằng `IMemoryCache`, hỗ trợ menu cha/con và các action logout/reset password.</p>
+    </article>
+</section>

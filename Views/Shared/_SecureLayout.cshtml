@@ -1,0 +1,64 @@
+@{
+    var currentUser = Context.Session.GetObject<CurrentUser>(SessionConstants.CurrentUser);
+    var displayName = currentUser?.DisplayName ?? User.Identity?.Name ?? "Authenticated User";
+    var email = currentUser?.Email ?? User.Identity?.Name ?? string.Empty;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <title>@ViewData["Title"] - Secure Portal</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Lab8_PhamVanTung_2324801030079.styles.css" asp-append-version="true" />
+</head>
+<body data-secure-context="true">
+    <div class="secure-shell">
+        <aside class="secure-sidebar">
+            <div class="secure-sidebar-brand">
+                <span class="eyebrow">Secure Workspace</span>
+                <h2>Service Portal</h2>
+            </div>
+
+            @await Component.InvokeAsync("LeftNavigation")
+        </aside>
+
+        <div class="secure-content">
+            <header class="secure-topbar">
+                <div>
+                    <span class="eyebrow">Authenticated Session</span>
+                    <h1>@ViewData["Title"]</h1>
+                </div>
+                <div class="secure-user-card">
+                    <strong>@displayName</strong>
+                    <span>@email</span>
+                </div>
+            </header>
+
+            <main class="secure-main">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <form id="logout-form" method="post" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+        @Html.AntiForgeryToken()
+    </form>
+
+    <form id="reset-password-form" method="post" asp-area="Identity" asp-page="/Account/InitiateResetPassword">
+        @Html.AntiForgeryToken()
+    </form>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/init.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

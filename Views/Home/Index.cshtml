@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="landing-hero">
+    <div class="landing-copy">
+        <span class="eyebrow">Lab 6 Security Implementation</span>
+        <h1>ASP.NET Core Identity, phân quyền role, session và reset password qua email</h1>
+        <p class="lead">
+            Project này sử dụng ASP.NET Core MVC kết hợp Razor Pages Identity, dashboard bảo vệ bằng đăng nhập,
+            navigation động theo role và luồng forgot/reset password gửi mail thật qua Gmail SMTP.
+        </p>
+        <div class="hero-actions">
+            @if (User.Identity?.IsAuthenticated == true)
+            {
+                <a class="btn btn-primary" asp-area="ServiceRequests" asp-controller="Dashboard" asp-action="Dashboard">Vào Dashboard</a>
+            }
+            else
+            {
+                <a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Login">Đăng nhập</a>
+            }
+            <a class="btn btn-outline-secondary" asp-area="" asp-controller="Home" asp-action="Privacy">Xem chính sách</a>
+        </div>
+    </div>
+
+    <div class="landing-panel">
+        <div class="content-card">
+            <h2>Tài khoản seed mặc định</h2>
+            <p>
+                Hệ thống tự seed 3 tài khoản mẫu trong `appsettings.json`: `Admin`, `Engineer`, `User`.
+                Bạn có thể đổi email và password mẫu tại phần `SeedData`.
+            </p>
+        </div>
+        <div class="content-card">
+            <h2>Gmail SMTP</h2>
+            <p>
+                Để forgot/reset password gửi mail thật, cập nhật `EmailSettings` với Gmail address và app password của bạn.
+            </p>
+        </div>
+    </div>
+</section>
