@@ -21,3 +21,21 @@ https://github.com/user-attachments/assets/f6cc972a-fb74-465d-aab3-0ab420db1a38
 
 https://github.com/user-attachments/assets/e67d6e4e-d4a1-4cde-b252-aa04ff598d76
 
+
+
+## Lap9
+
+
+https://github.com/user-attachments/assets/f19504a7-d934-4f7f-914c-e2bbfda8bc8d
+
+
+##lap10
+
+
+
+https://github.com/user-attachments/assets/ee138b25-655a-48a6-82c9-4ac3814fc92e
+
+
+
+
+
