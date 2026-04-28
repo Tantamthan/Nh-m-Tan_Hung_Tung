@@ -1,0 +1,51 @@
+@model Lab8_PhamVanTung_2324801030079.Models.NavigationItem
+
+@{
+    var iconClass = string.IsNullOrWhiteSpace(Model.Icon) ? "bi bi-chevron-right" : Model.Icon;
+}
+
+<li class="left-navigation-item">
+    @if (Model.HasChildren)
+    {
+        <details class="left-navigation-group" open>
+            <summary>
+                <span><i class="@iconClass"></i> @Model.Title</span>
+                <i class="bi bi-chevron-down toggle-indicator"></i>
+            </summary>
+            <ul class="left-navigation-list nested">
+                @foreach (var child in Model.Children)
+                {
+                    <partial name="/Views/Shared/Components/LeftNavigation/_NavigationItem.cshtml" model="child" />
+                }
+            </ul>
+        </details>
+    }
+    else if (string.Equals(Model.ClientAction, "logout", StringComparison.OrdinalIgnoreCase))
+    {
+        <a href="#" class="left-navigation-link" data-submit-form="logout-form">
+            <i class="@iconClass"></i>
+            <span>@Model.Title</span>
+        </a>
+    }
+    else if (string.Equals(Model.ClientAction, "reset-password", StringComparison.OrdinalIgnoreCase))
+    {
+        <a href="#" class="left-navigation-link" data-submit-form="reset-password-form">
+            <i class="@iconClass"></i>
+            <span>@Model.Title</span>
+        </a>
+    }
+    else if (!string.IsNullOrWhiteSpace(Model.Page))
+    {
+        <a asp-area="@Model.Area" asp-page="@Model.Page" class="left-navigation-link">
+            <i class="@iconClass"></i>
+            <span>@Model.Title</span>
+        </a>
+    }
+    else
+    {
+        <a asp-area="@Model.Area" asp-controller="@Model.Controller" asp-action="@Model.Action" class="left-navigation-link">
+            <i class="@iconClass"></i>
+            <span>@Model.Title</span>
+        </a>
+    }
+</li>

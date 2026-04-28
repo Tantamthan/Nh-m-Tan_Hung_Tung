@@ -1,0 +1,10 @@
+@model IReadOnlyList<Lab8_PhamVanTung_2324801030079.Models.NavigationItem>
+
+<nav class="left-navigation" aria-label="Secure navigation">
+    <ul class="left-navigation-list">
+        @foreach (var item in Model)
+        {
+            <partial name="/Views/Shared/Components/LeftNavigation/_NavigationItem.cshtml" model="item" />
+        }
+    </ul>
+</nav>

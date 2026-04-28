@@ -1,0 +1,43 @@
+@page
+@model Lab8_PhamVanTung_2324801030079.Areas.Identity.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<section class="auth-shell">
+    <div class="auth-card">
+        <div class="auth-card-header">
+            <span class="eyebrow">Identity Login</span>
+            <h1>Đăng nhập hệ thống</h1>
+            <p>Sử dụng email và mật khẩu để truy cập Dashboard bảo mật.</p>
+        </div>
+
+        <form method="post" asp-route-returnUrl="@Model.ReturnUrl" class="auth-form">
+            <div asp-validation-summary="ModelOnly" class="validation-summary-errors"></div>
+
+            <div class="mb-3">
+                <label asp-for="Input.Email" class="form-label"></label>
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Input.Password" class="form-label"></label>
+                <input asp-for="Input.Password" class="form-control" autocomplete="current-password" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-check mb-3">
+                <input asp-for="Input.RememberMe" class="form-check-input" />
+                <label asp-for="Input.RememberMe" class="form-check-label"></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+
+            <div class="auth-links">
+                <a asp-page="./ForgotPassword">Forgot Password?</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index">Về trang chủ</a>
+            </div>
+        </form>
+    </div>
+</section>
