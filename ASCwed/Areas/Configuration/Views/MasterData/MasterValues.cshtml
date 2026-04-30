@@ -1,0 +1,344 @@
+@using ASC.Model.Models
+@model ASCwed.Areas.Configuration.Models.MasterValuesViewModel
+@{
+    ViewData["Title"] = "Master Values";
+    var masterKeys = ViewBag.MasterKeys as List<MasterDataKey> ?? new List<MasterDataKey>();
+}
+
+<div class="row"></div>
+<div class="row padding-left-20px padding-right-20px">
+    <div class="col s12">
+        <div class="section white-text padding-left-10px blue-grey lighten-1">
+            <h5>Master Values</h5>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+    <div class="input-field col s4 padding-bottom-15px">
+        <select id="ddlMasterKeys">
+            <option value="">--Select--</option>
+            @foreach (var masterKey in masterKeys)
+            {
+                <option value="@masterKey.PartitionKey">@masterKey.PartitionKey</option>
+            }
+        </select>
+        <label>Partition Key</label>
+    </div>
+
+    <div class="col s4 offset-s4 padding-bottom-15px right-align">
+        <a class="modal-trigger waves-effect waves-light btn" href="#modalUpload">
+            <i class="material-icons left">file_upload</i>
+            Import Excel
+        </a>
+    </div>
+
+    <div class="col s12 padding-bottom-15px">
+        @* Danh sách master value được tải theo master key *@
+        <table class="highlight centered responsive-table" id="tblMasterValues">
+            <thead>
+                <tr>
+                    <th>Row Key</th>
+                    <th>Partition Key</th>
+                    <th>Name</th>
+                    <th>Is Active</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="5">Please select a master key.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    @* Khu vực nhập/chỉnh sửa master value *@
+    <div class="col s12 m12 z-depth-3">
+        <div class="section white-text padding-left-10px blue-grey lighten-1">
+            <h5>Master Value Details</h5>
+        </div>
+        <div class="divider"></div>
+        <form asp-controller="MasterData" asp-action="MasterValues" method="post" class="col s12" id="formMasterValue">
+            @Html.AntiForgeryToken()
+            <input type="hidden" id="IsEdit" name="isEdit" value="false" />
+            <input type="hidden" id="MasterValue_RowKey" name="RowKey" />
+
+            <div class="row">
+                <div class="input-field col s4">
+                    <input type="text" id="Input_MasterValue_RowKey" disabled="disabled" />
+                    <label for="Input_MasterValue_RowKey">RowKey</label>
+                </div>
+                <div class="input-field col s4">
+                    <select asp-for="MasterValueInContext.PartitionKey" id="MasterValue_PartitionKey" name="PartitionKey" required="required">
+                        <option value="">--Select--</option>
+                        @foreach (var masterKey in masterKeys)
+                        {
+                            <option value="@masterKey.PartitionKey">@masterKey.PartitionKey</option>
+                        }
+                    </select>
+                    <label>Partition Key</label>
+                    <span class="helper-text red-text" data-valmsg-for="PartitionKey"></span>
+                </div>
+                <div class="input-field col s4">
+                    <input asp-for="MasterValueInContext.Name" id="MasterValue_Name" name="Name" class="validate" />
+                    <label for="MasterValue_Name">Name</label>
+                    <span class="helper-text red-text" data-valmsg-for="Name"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s4">
+                    <div class="switch">
+                        <label>
+                            Is Active
+                            <input id="MasterValue_IsActive" name="IsActive" type="checkbox" value="true" checked="checked" />
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-field col s8 right-align">
+                    <button class="btn waves-effect waves-light btnSubmit" type="button">
+                        Create
+                        <i class="material-icons right">send</i>
+                    </button>
+                    <button class="btn waves-effect waves-light reset red lighten-1" type="button">
+                        Reset
+                    </button>
+                </div>
+                <div class="col s12 red-text validation-summary"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@* Modal import Excel *@
+<div id="modalUpload" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4>Upload Excel</h4>
+        <p>Upload an Excel file with columns: MasterKey, MasterValue, IsActive.</p>
+
+        <div class="row hide divErrors">
+            <div class="col s12">
+                <div class="card-panel red lighten-1">
+                    <span class="white-text errors"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="progress hide">
+            <div class="indeterminate"></div>
+        </div>
+
+        <form id="formUploadExcel" enctype="multipart/form-data" method="post">
+            @Html.AntiForgeryToken()
+            <div class="file-field input-field">
+                <div class="btn">
+                    <span>File</span>
+                    <input type="file" id="files" name="files" accept=".xlsx,.xls" />
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn waves-effect waves-light btnUpload" type="button">
+            Upload
+            <i class="material-icons right">send</i>
+        </button>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(document).ready(function () {
+            $('.modal').modal();
+            $('select').formSelect();
+            M.updateTextFields();
+
+            function selectedMasterKey() {
+                return $('#ddlMasterKeys').val();
+            }
+
+            function showMessage(message, cssClass) {
+                M.toast({ html: message, classes: cssClass });
+            }
+
+            function renderRows(values) {
+                var body = $('#tblMasterValues tbody');
+                body.empty();
+
+                if (!values || values.length === 0) {
+                    body.append('<tr><td colspan="5">No master values found.</td></tr>');
+                    return;
+                }
+
+                $.each(values, function (_, item) {
+                    var activeIcon = item.IsActive
+                        ? '<i class="material-icons green-text">check</i>'
+                        : '<i class="material-icons red-text">close</i>';
+
+                    var row = $('<tr></tr>');
+                    row.append($('<td></td>').text(item.RowKey));
+                    row.append($('<td></td>').text(item.PartitionKey));
+                    row.append($('<td></td>').text(item.Name));
+                    row.append($('<td></td>').html(activeIcon));
+                    row.append(
+                        $('<td></td>').append(
+                            $('<button type="button" class="btn-flat btn-edit-master-value" title="Edit"><i class="material-icons">edit</i></button>')
+                                .data('row-key', item.RowKey)
+                                .data('partition-key', item.PartitionKey)
+                                .data('name', item.Name)
+                                .data('is-active', item.IsActive)
+                        )
+                    );
+                    body.append(row);
+                });
+            }
+
+            function loadMasterValues(key) {
+                if (!key) {
+                    renderRows([]);
+                    return;
+                }
+
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("MasterValuesByKey", "MasterData", new { area = "Configuration" })',
+                    data: { key: key },
+                    success: function (response) {
+                        renderRows(response.data);
+                    },
+                    error: function () {
+                        $('#tblMasterValues tbody').html('<tr><td colspan="5">Cannot load master values.</td></tr>');
+                    }
+                });
+            }
+
+            function resetForm() {
+                $('#formMasterValue')[0].reset();
+                $('#IsEdit').val('false');
+                $('#MasterValue_RowKey').val('');
+                $('#Input_MasterValue_RowKey').val('');
+                $('#MasterValue_PartitionKey').prop('disabled', false);
+                $('#MasterValue_PartitionKey').val(selectedMasterKey());
+                $('#MasterValue_IsActive').prop('checked', true);
+                $('.btnSubmit').contents().first()[0].textContent = 'Create ';
+                $('.validation-summary').html('');
+                $('select').formSelect();
+                M.updateTextFields();
+            }
+
+            $('#ddlMasterKeys').on('change', function () {
+                var key = selectedMasterKey();
+                loadMasterValues(key);
+                resetForm();
+            });
+
+            // Nạp dữ liệu dòng được chọn vào form chỉnh sửa.
+            $(document).on('click', '.btn-edit-master-value', function () {
+                var button = $(this);
+                $('#IsEdit').val('true');
+                $('#MasterValue_RowKey').val(button.data('row-key'));
+                $('#Input_MasterValue_RowKey').val(button.data('row-key'));
+                $('#MasterValue_PartitionKey').val(button.data('partition-key'));
+                $('#MasterValue_PartitionKey').prop('disabled', true);
+                $('#MasterValue_Name').val(button.data('name'));
+                $('#MasterValue_IsActive').prop('checked', button.data('is-active') === true || button.data('is-active') === 'true');
+                $('.btnSubmit').contents().first()[0].textContent = 'Save ';
+                $('.validation-summary').html('');
+                $('select').formSelect();
+                M.updateTextFields();
+            });
+
+            $('.reset').on('click', function () {
+                resetForm();
+            });
+
+            $('.btnSubmit').on('click', function () {
+                var form = $('#formMasterValue');
+                if (!form.valid()) {
+                    return;
+                }
+
+                var disabledPartitionKey = $('#MasterValue_PartitionKey').prop('disabled');
+                if (disabledPartitionKey) {
+                    $('#MasterValue_PartitionKey').prop('disabled', false);
+                }
+
+                var data = form.serialize();
+
+                if (disabledPartitionKey) {
+                    $('#MasterValue_PartitionKey').prop('disabled', true);
+                }
+
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("MasterValues", "MasterData", new { area = "Configuration" })',
+                    data: data,
+                    success: function (response) {
+                        if (response === true) {
+                            showMessage('Master value saved successfully.', 'green');
+                            loadMasterValues($('#MasterValue_PartitionKey').val());
+                            $('#ddlMasterKeys').val($('#MasterValue_PartitionKey').val());
+                            resetForm();
+                            $('select').formSelect();
+                            return;
+                        }
+
+                        $('.validation-summary').html('Master value data is invalid.');
+                    },
+                    error: function () {
+                        $('.validation-summary').html('Cannot save master value.');
+                    }
+                });
+            });
+
+            $('.btnUpload').on('click', function () {
+                var files = $('#files').prop('files');
+                if (!files || files.length === 0) {
+                    $('.divErrors').removeClass('hide');
+                    $('.errors').html('Upload a file');
+                    return;
+                }
+
+                var formData = new FormData();
+                formData.append('files', files[0]);
+                formData.append('__RequestVerificationToken', $('#formUploadExcel input[name="__RequestVerificationToken"]').val());
+
+                $('.progress').removeClass('hide');
+                $('.divErrors').addClass('hide');
+
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("UploadExcel", "MasterData", new { area = "Configuration" })',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (message) {
+                        $('.progress').addClass('hide');
+
+                        var isSuccess = message.Success === true || message.success === true;
+                        var isError = message.Error === true || message.error === true;
+                        var errorText = message.Text || message.text || 'Cannot import Excel file.';
+
+                        if (isSuccess) {
+                            showMessage('Excel imported successfully.', 'green');
+                            window.location.reload();
+                            return;
+                        }
+
+                        $('.divErrors').removeClass('hide');
+                        $('.errors').html(isError ? errorText : 'Cannot import Excel file.');
+                    },
+                    error: function () {
+                        $('.progress').addClass('hide');
+                        $('.divErrors').removeClass('hide');
+                        $('.errors').html('Cannot import Excel file.');
+                    }
+                });
+            });
+        });
+    </script>
+}
