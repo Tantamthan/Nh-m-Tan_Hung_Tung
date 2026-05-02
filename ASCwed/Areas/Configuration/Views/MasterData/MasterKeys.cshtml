@@ -1,0 +1,183 @@
+@model ASCwed.Areas.Configuration.Models.MasterKeysViewModel
+@{
+    ViewData["Title"] = "Master Keys";
+}
+
+<div class="row"></div>
+<div class="row padding-left-20px padding-right-20px">
+    <div class="col s12">
+        <div class="section white-text padding-left-10px blue-grey lighten-1">
+            <h5>Master Keys</h5>
+        </div>
+        <div class="divider"></div>
+    </div>
+
+    <div class="col s12 padding-bottom-15px">
+        @* Danh sách master key *@
+        @if (Model.MasterKeys != null && Model.MasterKeys.Any())
+        {
+            <table class="highlight centered responsive-table" id="tblMasterKeys">
+                <thead>
+                    <tr>
+                        <th>Row Key</th>
+                        <th>Partition Key</th>
+                        <th>Name</th>
+                        <th>Is Active</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var masterKey in Model.MasterKeys)
+                    {
+                        <tr>
+                            <td>@masterKey.RowKey</td>
+                            <td>@masterKey.PartitionKey</td>
+                            <td>@masterKey.Name</td>
+                            <td>
+                                <i class="material-icons @(masterKey.IsActive ? "green-text" : "red-text")">
+                                    @(masterKey.IsActive ? "check" : "close")
+                                </i>
+                            </td>
+                            <td>
+                                <button type="button"
+                                        class="btn-flat btn-edit-master-key"
+                                        data-row-key="@masterKey.RowKey"
+                                        data-partition-key="@masterKey.PartitionKey"
+                                        data-name="@masterKey.Name"
+                                        data-is-active="@masterKey.IsActive.ToString().ToLowerInvariant()"
+                                        title="Edit">
+                                    <i class="material-icons">edit</i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div class="card blue-grey lighten-1">
+                <div class="card-content white-text">
+                    <span class="card-title">No Master Keys found</span>
+                    <p>Please add a Master Key to the system.</p>
+                </div>
+            </div>
+        }
+    </div>
+
+    @* Khu vực nhập/chỉnh sửa master key *@
+    <div class="col s12 m12 z-depth-3">
+        <div class="section white-text padding-left-10px blue-grey lighten-1">
+            <h5>Master Key Details</h5>
+        </div>
+        <div class="divider"></div>
+        <form asp-controller="MasterData" asp-action="MasterKeys" method="post" class="col s12" id="formMasterKey">
+            @Html.AntiForgeryToken()
+            <input type="hidden" id="IsEdit" name="isEdit" value="false" />
+            <input type="hidden" id="MasterKey_RowKey" name="RowKey" />
+            <input type="hidden" id="MasterKey_PartitionKey" name="PartitionKey" />
+
+            <div class="row">
+                <div class="input-field col s4">
+                    <input type="text" id="Input_MasterKey_RowKey" disabled="disabled" />
+                    <label for="Input_MasterKey_RowKey">RowKey</label>
+                </div>
+                <div class="input-field col s4">
+                    <input asp-for="MasterKeyInContext.Name" id="MasterKey_Name" name="Name" class="validate" />
+                    <label for="MasterKey_Name">Name</label>
+                    <span class="helper-text red-text" data-valmsg-for="Name"></span>
+                </div>
+                <div class="input-field col s4">
+                    <div class="switch">
+                        <label>
+                            Is Active
+                            <input id="MasterKey_IsActive" name="IsActive" type="checkbox" value="true" checked="checked" />
+                            <span class="lever"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 right-align">
+                    <button class="btn waves-effect waves-light btnSubmit" type="button">
+                        Create
+                        <i class="material-icons right">send</i>
+                    </button>
+                    <button class="btn waves-effect waves-light reset red lighten-1" type="button">
+                        Reset
+                    </button>
+                </div>
+                <div class="col s12 red-text validation-summary"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+            M.updateTextFields();
+
+            function showMessage(message, cssClass) {
+                M.toast({ html: message, classes: cssClass });
+            }
+
+            function resetForm() {
+                $('#formMasterKey')[0].reset();
+                $('#IsEdit').val('false');
+                $('#MasterKey_RowKey').val('');
+                $('#MasterKey_PartitionKey').val('');
+                $('#Input_MasterKey_RowKey').val('');
+                $('#MasterKey_IsActive').prop('checked', true);
+                $('.btnSubmit').contents().first()[0].textContent = 'Create ';
+                $('.validation-summary').html('');
+                M.updateTextFields();
+            }
+
+            // Nạp dữ liệu dòng được chọn vào form chỉnh sửa.
+            $('.btn-edit-master-key').on('click', function () {
+                var button = $(this);
+                $('#IsEdit').val('true');
+                $('#MasterKey_RowKey').val(button.data('row-key'));
+                $('#MasterKey_PartitionKey').val(button.data('partition-key'));
+                $('#Input_MasterKey_RowKey').val(button.data('row-key'));
+                $('#MasterKey_Name').val(button.data('name'));
+                $('#MasterKey_IsActive').prop('checked', button.data('is-active') === true || button.data('is-active') === 'true');
+                $('.btnSubmit').contents().first()[0].textContent = 'Save ';
+                $('.validation-summary').html('');
+                M.updateTextFields();
+            });
+
+            $('.reset').on('click', function () {
+                resetForm();
+            });
+
+            $('.btnSubmit').on('click', function () {
+                var form = $('#formMasterKey');
+                if (!form.valid()) {
+                    return;
+                }
+
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("MasterKeys", "MasterData", new { area = "Configuration" })',
+                    data: form.serialize(),
+                    success: function (response) {
+                        if (response === true) {
+                            showMessage('Master key saved successfully.', 'green');
+                            window.location.reload();
+                            return;
+                        }
+
+                        $('.validation-summary').html('Master key data is invalid.');
+                    },
+                    error: function () {
+                        $('.validation-summary').html('Cannot save master key.');
+                    }
+                });
+            });
+        });
+    </script>
+}

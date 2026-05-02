@@ -1,0 +1,267 @@
+html {
+    font-size: 14px;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: #f5f7fa;
+    color: #263238;
+}
+
+.margin-bottom-0px {
+    margin-bottom: 0 !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.nav-button {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+}
+
+.public-main {
+    min-height: calc(100vh - 220px);
+}
+
+.brand-logo-public,
+.secure-brand {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    color: #263238 !important;
+}
+
+.secure-brand {
+    color: #ffffff !important;
+    margin-left: 56px;
+}
+
+.brand-logo-public img,
+.secure-brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.brand-logo-public span,
+.secure-brand span {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.public-menu a {
+    color: #37474f !important;
+}
+
+.left-space {
+    margin-left: 1rem;
+}
+
+.secure-user-label {
+    display: inline-block;
+    padding-right: 1rem;
+    color: #eceff1;
+}
+
+.parallax-container .section {
+    position: relative;
+    z-index: 1;
+}
+
+.parallax-container {
+    min-height: 420px;
+}
+
+#index-banner.parallax-container {
+    min-height: 520px;
+}
+
+.parallax-container h5 {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.65);
+    font-weight: 600;
+}
+
+header.secureLayout,
+main.secureLayout,
+footer.secureLayout {
+    padding-left: 300px;
+    transition: padding-left 0.25s ease;
+}
+
+.sidenav.sidenav-fixed {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+body.secure-nav-collapsed header.secureLayout,
+body.secure-nav-collapsed main.secureLayout,
+body.secure-nav-collapsed footer.secureLayout {
+    padding-left: 0;
+}
+
+body.secure-nav-collapsed .sidenav.sidenav-fixed {
+    transform: translateX(-105%) !important;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.secure-menu-trigger {
+    position: relative;
+    z-index: 1001;
+}
+
+@media only screen and (max-width: 992px) {
+    header.secureLayout,
+    main.secureLayout,
+    footer.secureLayout {
+        padding-left: 0;
+    }
+
+    .secure-brand {
+        margin-left: 0;
+    }
+
+    .brand-logo-public span,
+    .secure-brand span {
+        display: none;
+    }
+
+    body.secure-nav-collapsed .sidenav.sidenav-fixed {
+        transform: translateX(0);
+        box-shadow: inherit;
+    }
+}
+
+.secure-main {
+    min-height: calc(100vh - 180px);
+    padding: 24px 0 40px;
+}
+
+.secure-container {
+    padding: 0 18px;
+}
+
+.panel-card,
+.auth-card {
+    border-radius: 18px;
+    box-shadow: 0 18px 45px rgba(38, 50, 56, 0.12);
+}
+
+.panel-card .card-content,
+.auth-card .card-content {
+    padding: 28px;
+}
+
+.stat-card {
+    border-radius: 18px;
+}
+
+.stat-card-blue {
+    background: linear-gradient(135deg, #455a64, #607d8b);
+}
+
+.stat-card-green {
+    background: linear-gradient(135deg, #00695c, #26a69a);
+}
+
+.stat-card-amber {
+    background: linear-gradient(135deg, #ef6c00, #ffb300);
+}
+
+.auth-shell {
+    padding: 48px 0 72px;
+}
+
+.auth-card {
+    overflow: hidden;
+}
+
+.auth-copy {
+    margin-bottom: 24px;
+    color: #607d8b;
+}
+
+.auth-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.auth-link {
+    color: #455a64;
+    font-weight: 500;
+}
+
+.input-field input:focus + label {
+    color: #455a64 !important;
+}
+
+.input-field input:focus {
+    border-bottom: 1px solid #455a64 !important;
+    box-shadow: 0 1px 0 0 #455a64 !important;
+}
+
+.input-field .input-validation-error {
+    border-bottom: 1px solid #FF4081;
+    box-shadow: 0 1px 0 0 #FF4081;
+}
+
+.input-field .valid {
+    border-bottom: 1px solid #00E676;
+    box-shadow: 0 1px 0 0 #00E676;
+}
+
+.validation-summary-errors {
+    color: #FF4081;
+    margin-bottom: 12px;
+}
+
+.helper-text.red-text {
+    color: #FF4081 !important;
+}
+
+.sidenav {
+    background: #fafbfc;
+}
+
+.sidenav li > a {
+    color: #37474f;
+}
+
+.sidenav li > a i.material-icons {
+    color: #546e7a;
+}
+
+.sidenav .user-view {
+    padding-top: 32px;
+    padding-bottom: 24px;
+}
+
+.sidenav .user-view .background {
+    background: linear-gradient(135deg, #263238, #455a64);
+}
+
+.sidenav .collapsible-header,
+.sidenav .collapsible-body a {
+    font-size: 0.98rem;
+}
+
+.page-footer {
+    margin-top: 0;
+}

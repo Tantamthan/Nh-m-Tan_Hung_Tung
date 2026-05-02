@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+.codex_tmp/
+.dotnet-home/
+*.user
+bin/
+obj/

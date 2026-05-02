@@ -1,0 +1,306 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{92D7E26E-38D1-56F7-78A9-D9A5047BE0C0}|ASC.Tests\\ASC.Tests.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.tests\\homecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92D7E26E-38D1-56F7-78A9-D9A5047BE0C0}|ASC.Tests\\ASC.Tests.csproj|solutionrelative:asc.tests\\homecontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92D7E26E-38D1-56F7-78A9-D9A5047BE0C0}|ASC.Tests\\ASC.Tests.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.tests\\asc.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{92D7E26E-38D1-56F7-78A9-D9A5047BE0C0}|ASC.Tests\\ASC.Tests.csproj|solutionrelative:asc.tests\\asc.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.dataaccess\\asc.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\asc.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AFA41EF-BDEB-4EE4-908D-22455BCC2DA6}|ASC.Utilities\\ASC.Utilities.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.utilities\\asc.utilities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1AFA41EF-BDEB-4EE4-908D-22455BCC2DA6}|ASC.Utilities\\ASC.Utilities.csproj|solutionrelative:asc.utilities\\asc.utilities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.model\\asc.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\asc.model.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.dataaccess\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.dataaccess\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.dataaccess\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7724DFC5-26E7-4347-9BDB-ED97B103835F}|ASC.DataAccess\\ASC.DataAccess.csproj|solutionrelative:asc.dataaccess\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.model\\basetypes\\iaudittracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\basetypes\\iaudittracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.model\\basetypes\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\basetypes\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.model\\basetypes\\constants .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2380C2F3-C933-4D5E-99D7-295D83C25666}|ASC.Model\\ASC.Model.csproj|solutionrelative:asc.model\\basetypes\\constants .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19627A9A-954E-45CD-AB7D-35B0ECAFBD56}|ASC.business\\ASC.business.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.business\\asc.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{19627A9A-954E-45CD-AB7D-35B0ECAFBD56}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\asc.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19627A9A-954E-45CD-AB7D-35B0ECAFBD56}|ASC.business\\ASC.business.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19627A9A-954E-45CD-AB7D-35B0ECAFBD56}|ASC.business\\ASC.business.csproj|solutionrelative:asc.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\ascwed\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AB70008-4810-DD9B-CB7C-BEBFE7B1E2F7}|ASCwed\\ASCwed.csproj|solutionrelative:ascwed\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92D7E26E-38D1-56F7-78A9-D9A5047BE0C0}|ASC.Tests\\ASC.Tests.csproj|c:\\users\\pc\\downloads\\nh-m-tan_hung_tung-main\\nh-m-tan_hung_tung-main\\asc.tests\\fakesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92D7E26E-38D1-56F7-78A9-D9A5047BE0C0}|ASC.Tests\\ASC.Tests.csproj|solutionrelative:asc.tests\\fakesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ASC.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Tests\\ASC.Tests.csproj",
+              "RelativeDocumentMoniker": "ASC.Tests\\ASC.Tests.csproj",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Tests\\ASC.Tests.csproj",
+              "RelativeToolTip": "ASC.Tests\\ASC.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-25T12:37:15.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ASC.Utilities.csproj",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Utilities\\ASC.Utilities.csproj",
+              "RelativeDocumentMoniker": "ASC.Utilities\\ASC.Utilities.csproj",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Utilities\\ASC.Utilities.csproj",
+              "RelativeToolTip": "ASC.Utilities\\ASC.Utilities.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-25T11:59:49.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ASC.Model.csproj",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Model\\ASC.Model.csproj",
+              "RelativeDocumentMoniker": "ASC.Model\\ASC.Model.csproj",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Model\\ASC.Model.csproj",
+              "RelativeToolTip": "ASC.Model\\ASC.Model.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-25T11:52:25.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ASC.DataAccess.csproj",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.DataAccess\\ASC.DataAccess.csproj",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\ASC.DataAccess.csproj",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.DataAccess\\ASC.DataAccess.csproj",
+              "RelativeToolTip": "ASC.DataAccess\\ASC.DataAccess.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-25T11:52:23.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IunitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
+              "RelativeToolTip": "ASC.DataAccess\\Interfaces\\IunitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T11:59:54.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.DataAccess\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.DataAccess\\UnitOfWork.cs",
+              "RelativeToolTip": "ASC.DataAccess\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T11:52:56.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Tests\\HomeControllerTests.cs",
+              "RelativeDocumentMoniker": "ASC.Tests\\HomeControllerTests.cs",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Tests\\HomeControllerTests.cs",
+              "RelativeToolTip": "ASC.Tests\\HomeControllerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T09:45:09.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Irepository.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "RelativeToolTip": "ASC.DataAccess\\Interfaces\\Irepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T11:59:55.077Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.DataAccess\\Repository.cs",
+              "RelativeDocumentMoniker": "ASC.DataAccess\\Repository.cs",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.DataAccess\\Repository.cs",
+              "RelativeToolTip": "ASC.DataAccess\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T11:52:55.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAuditTracker.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Model\\BaseTypes\\IAuditTracker.cs",
+              "RelativeDocumentMoniker": "ASC.Model\\BaseTypes\\IAuditTracker.cs",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Model\\BaseTypes\\IAuditTracker.cs",
+              "RelativeToolTip": "ASC.Model\\BaseTypes\\IAuditTracker.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T11:52:31.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Model\\BaseTypes\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "ASC.Model\\BaseTypes\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Model\\BaseTypes\\BaseEntity.cs",
+              "RelativeToolTip": "ASC.Model\\BaseTypes\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T11:52:29.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Constants .cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Model\\BaseTypes\\Constants .cs",
+              "RelativeDocumentMoniker": "ASC.Model\\BaseTypes\\Constants .cs",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Model\\BaseTypes\\Constants .cs",
+              "RelativeToolTip": "ASC.Model\\BaseTypes\\Constants .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T11:52:28.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ASC.business.csproj",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.business\\ASC.business.csproj",
+              "RelativeDocumentMoniker": "ASC.business\\ASC.business.csproj",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.business\\ASC.business.csproj",
+              "RelativeToolTip": "ASC.business\\ASC.business.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-25T11:08:53.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.business\\Class1.cs",
+              "RelativeDocumentMoniker": "ASC.business\\Class1.cs",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.business\\Class1.cs",
+              "RelativeToolTip": "ASC.business\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T11:08:48.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FakeSession.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Tests\\FakeSession.cs",
+              "RelativeDocumentMoniker": "ASC.Tests\\FakeSession.cs",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASC.Tests\\FakeSession.cs",
+              "RelativeToolTip": "ASC.Tests\\FakeSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T10:34:17.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASCwed\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ASCwed\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\pc\\Downloads\\Nh-m-Tan_Hung_Tung-main\\Nh-m-Tan_Hung_Tung-main\\ASCwed\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ASCwed\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T09:37:03.849Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

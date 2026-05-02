@@ -1,0 +1,48 @@
+@model ASCwed.Areas.ServiceRequests.Models.DashboardViewModel
+@using ASC.Model.BaseTypes
+@{
+    ViewData["Title"] = "Service Requests";
+}
+
+<div class="row"></div>
+@await Html.PartialAsync("_ServiceRequestGrid", Model.ServiceRequests,
+    new ViewDataDictionary(ViewData)
+    {
+        { "SectionName", "Service Requests" },
+        { "Id", "tblServiceRequests" },
+        { "IsAudit", User.IsInRole(Roles.Admin.ToString()) }
+    })
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.8/css/jquery.dataTables.min.css" />
+}
+
+@section Scripts {
+    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Khởi tạo DataTable để hiển thị danh sách yêu cầu dịch vụ.
+            var table = $('#tblServiceRequests').DataTable({
+                pageLength: 3,
+                lengthMenu: [[3, 5, 10, -1], [3, 5, 10, 'All']],
+                sorting: [],
+                columns: [
+                    { visible: false },
+                    { visible: false },
+                    null,
+                    { width: '20%' },
+                    null,
+                    null,
+                    @if (User.IsInRole(Roles.Admin.ToString()))
+                    {
+                        @:null,
+                    }
+                    null
+                ]
+            });
+
+            $('.tblServiceRequests').css('width', '100%');
+            $('select[name$="ServiceRequests_length"]').formSelect();
+        });
+    </script>
+}

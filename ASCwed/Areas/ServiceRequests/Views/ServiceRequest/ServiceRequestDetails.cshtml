@@ -1,0 +1,187 @@
+@model ASCwed.Areas.ServiceRequests.Models.ServiceRequestDetailsViewModel
+
+@{
+    ViewData["Title"] = "Service Request Details";
+}
+
+<div class="row"></div>
+<div class="row padding-top-20px padding-left-20px padding-right-20px">
+    <div class="col s12 z-depth-3">
+        <div class="section white-text padding-left-10px blue-grey lighten-1">
+            <h5>Service Request Details</h5>
+        </div>
+        <div class="divider"></div>
+
+        <div class="row padding-10px">
+            <div class="col s12 m6">
+                <p><strong>Customer</strong>: @Model.ServiceRequest.PartitionKey</p>
+                <p><strong>Status</strong>: @Model.ServiceRequest.Status</p>
+                <p><strong>Requested Date</strong>: @(Model.ServiceRequest.RequestedDate?.ToString("dd/MM/yyyy") ?? string.Empty)</p>
+            </div>
+            <div class="col s12 m6">
+                <p><strong>Vehicle Name</strong>: @Model.ServiceRequest.VehicleName</p>
+                <p><strong>Vehicle Type</strong>: @Model.ServiceRequest.VehicleType</p>
+                <p><strong>Service Engineer</strong>: @Model.ServiceRequest.ServiceEngineer</p>
+            </div>
+            <div class="col s12">
+                <p><strong>Requested Services</strong></p>
+                <p>@Model.ServiceRequest.RequestedServices</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row padding-left-20px padding-right-20px">
+    <div class="col s12 z-depth-3">
+        <div class="section white-text padding-left-10px blue-grey lighten-1">
+            <h5>Service Request Messages</h5>
+        </div>
+        <div class="divider"></div>
+
+        <div class="row padding-10px">
+            <div class="col s12">
+                @Html.AntiForgeryToken()
+                <input type="hidden" id="ServiceRequest_PartitionKey" value="@Model.ServiceRequest.PartitionKey" />
+                <input type="hidden" id="ServiceRequest_RowKey" value="@Model.ServiceRequest.RowKey" />
+
+                <div class="row">
+                    <div class="col s12">
+                        <span id="spnAdmin" class="chip red white-text">Admin - Offline</span>
+                        <span id="spnEngineer" class="chip red white-text">Engineer - Offline</span>
+                        <span id="spnCustomer" class="chip red white-text">Customer - Offline</span>
+                    </div>
+                </div>
+
+                <ul id="messagesList" class="collection">
+                    @if (Model.Messages.Count == 0)
+                    {
+                        <li class="collection-item noMessages">No Messages.</li>
+                    }
+                    else
+                    {
+                        foreach (var message in Model.Messages.OrderBy(item => item.MessageDate))
+                        {
+                            <li class="collection-item">
+                                <strong>@message.FromDisplayName</strong>
+                                <span class="right">@message.MessageDate?.ToLocalTime().ToString("g")</span>
+                                <p>@message.Message</p>
+                            </li>
+                        }
+                    }
+                </ul>
+
+                <div class="input-field">
+                    <input type="text" id="txtMessage" />
+                    <label for="txtMessage">Type message here.</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            const partitionKey = document.getElementById('ServiceRequest_PartitionKey').value;
+            const rowKey = document.getElementById('ServiceRequest_RowKey').value;
+            const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+            const messagesList = document.getElementById('messagesList');
+            const messageInput = document.getElementById('txtMessage');
+
+            const connection = new signalR.HubConnectionBuilder()
+                .withUrl(`/serviceMessagesHub?partitionKey=${encodeURIComponent(partitionKey)}&rowKey=${encodeURIComponent(rowKey)}`)
+                .withAutomaticReconnect()
+                .build();
+
+            connection.on('ReceiveMessage', function (message) {
+                const messagePartitionKey = message?.PartitionKey || message?.partitionKey;
+                if (!message || messagePartitionKey !== rowKey) {
+                    return;
+                }
+
+                appendMessage(message);
+                scrollToLatestMessages();
+            });
+
+            connection.on('UpdateOnlineStatus', function (data) {
+                updateStatus('spnAdmin', data.isAd, 'Admin');
+                updateStatus('spnEngineer', data.isSe, 'Engineer');
+                updateStatus('spnCustomer', data.isCu, 'Customer');
+            });
+
+            messageInput.addEventListener('keydown', async function (event) {
+                if (event.key !== 'Enter') {
+                    return;
+                }
+
+                event.preventDefault();
+                const messageText = messageInput.value.trim();
+                if (!messageText) {
+                    return;
+                }
+
+                const body = new URLSearchParams();
+                body.append('__RequestVerificationToken', token);
+                body.append('partitionKey', partitionKey);
+                body.append('rowKey', rowKey);
+                body.append('message', messageText);
+
+                const response = await fetch('/ServiceRequests/CreateMessage', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                        'RequestVerificationToken': token
+                    },
+                    body: body.toString()
+                });
+
+                const success = await response.json();
+                if (success === true) {
+                    messageInput.value = '';
+                }
+            });
+
+            connection.start().catch(function (error) {
+                console.error(error.toString());
+            });
+
+            function appendMessage(message) {
+                const noMessages = messagesList.querySelector('.noMessages');
+                if (noMessages) {
+                    noMessages.remove();
+                }
+
+                const item = document.createElement('li');
+                item.className = 'collection-item';
+
+                const sender = document.createElement('strong');
+                sender.textContent = message.FromDisplayName || message.fromDisplayName || '';
+
+                const time = document.createElement('span');
+                time.className = 'right';
+                const messageDate = message.MessageDate || message.messageDate;
+                time.textContent = messageDate ? new Date(messageDate).toLocaleString() : '';
+
+                const content = document.createElement('p');
+                content.textContent = message.Message || message.message || '';
+
+                item.appendChild(sender);
+                item.appendChild(time);
+                item.appendChild(content);
+                messagesList.appendChild(item);
+            }
+
+            function updateStatus(elementId, isOnline, label) {
+                const element = document.getElementById(elementId);
+                element.classList.toggle('green', isOnline === true);
+                element.classList.toggle('red', isOnline !== true);
+                element.textContent = `${label} - ${isOnline ? 'Online' : 'Offline'}`;
+            }
+
+            function scrollToLatestMessages() {
+                messagesList.scrollTop = messagesList.scrollHeight;
+            }
+        });
+    </script>
+}

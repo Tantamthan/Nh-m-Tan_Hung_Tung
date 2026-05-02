@@ -1,0 +1,76 @@
+@model ASCwed.Areas.ServiceRequests.Models.NewServiceRequestViewModel
+@using ASC.Model.Models
+@using Microsoft.AspNetCore.Mvc.Rendering
+@{
+    ViewData["Title"] = "New Service Request";
+    var vehicleNames = ViewBag.VehicleNames as List<MasterDataValue> ?? new List<MasterDataValue>();
+    var vehicleTypes = ViewBag.VehicleTypes as List<MasterDataValue> ?? new List<MasterDataValue>();
+}
+
+<div class="row"></div>
+<div class="row padding-top-20px padding-left-20px padding-right-20px">
+    <div class="col s12 z-depth-3">
+        <div class="section white-text padding-left-10px blue-grey lighten-1">
+            <h5>New Service Request</h5>
+        </div>
+        <div class="divider"></div>
+        <form asp-area="ServiceRequests" asp-controller="ServiceRequest" asp-action="ServiceRequest" method="post" class="col s12">
+            @Html.AntiForgeryToken()
+            <div class="row">
+                <div class="input-field col s12 m4">
+                    <select asp-for="VehicleName"
+                            asp-items="@(new SelectList(vehicleNames, nameof(MasterDataValue.RowKey), nameof(MasterDataValue.Name)))"
+                            required="required">
+                        <option value="">Please select one</option>
+                    </select>
+                    <label asp-for="VehicleName"></label>
+                    <span asp-validation-for="VehicleName" class="helper-text red-text"></span>
+                </div>
+                <div class="input-field col s12 m4">
+                    <select asp-for="VehicleType"
+                            asp-items="@(new SelectList(vehicleTypes, nameof(MasterDataValue.RowKey), nameof(MasterDataValue.Name)))"
+                            required="required">
+                        <option value="">Please select one</option>
+                    </select>
+                    <label asp-for="VehicleType"></label>
+                    <span asp-validation-for="VehicleType" class="helper-text red-text"></span>
+                </div>
+                <div class="input-field col s12 m4">
+                    <input asp-for="RequestedDate" type="text" class="datepicker" autocomplete="off" />
+                    <label asp-for="RequestedDate"></label>
+                    <span asp-validation-for="RequestedDate" class="helper-text red-text"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m8">
+                    <textarea asp-for="RequestedServices" class="materialize-textarea"></textarea>
+                    <label asp-for="RequestedServices"></label>
+                    <span asp-validation-for="RequestedServices" class="helper-text red-text"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 right-align">
+                    <button class="btn waves-effect waves-light btnSubmit" type="submit" name="action">
+                        Create
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+                <div class="row col s12 right-align red-text" asp-validation-summary="All"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.datepicker').datepicker({
+                format: 'dd/mm/yyyy'
+            });
+
+            $('select').formSelect();
+            $('select[required]').css({ display: 'block', position: 'absolute', visibility: 'hidden' });
+        });
+    </script>
+}

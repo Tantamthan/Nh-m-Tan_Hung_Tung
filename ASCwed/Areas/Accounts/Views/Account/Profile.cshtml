@@ -1,0 +1,83 @@
+@model ASCwed.Areas.Accounts.Models.ProfileViewModel
+@{
+    ViewData["Title"] = "Hồ sơ của tôi";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/profile.css" asp-append-version="true" />
+}
+
+<div class="profile-page">
+    <div class="profile-page-header">
+        <span class="material-icons profile-page-header__icon">face</span>
+        <div>
+            <h1 class="profile-page-header__title">Hồ sơ cá nhân</h1>
+            <p class="profile-page-header__subtitle">Quản lý và cập nhật thông tin tài khoản của bạn</p>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    @if (TempData["Success"] != null || Model?.IsEditSuccess == true)
+    {
+        <div class="pro-success-banner">
+            <span class="material-icons">check_circle</span>
+            <span>@(TempData["Success"] ?? "Cập nhật hồ sơ thành công!")</span>
+        </div>
+    }
+
+    <div class="profile-card">
+        <div class="profile-card__header">
+            <div class="profile-avatar">
+                @if (!string.IsNullOrEmpty(Model?.UserName))
+                {
+                    @Model.UserName.Substring(0, 1).ToUpper()
+                }
+                else
+                {
+                    <span class="material-icons" style="font-size: 40px;">person</span>
+                }
+            </div>
+            <h3 style="margin:0; font-size: 20px; color: #333; font-weight: 600;">@Model?.UserName</h3>
+            <p style="margin: 4px 0 0 0; color: #666; font-size: 14px;">@Model?.Email</p>
+        </div>
+
+        <form asp-action="Profile" asp-area="Accounts" asp-controller="Account" method="post">
+            @Html.AntiForgeryToken()
+            <div class="profile-card__body">
+                
+                @if (!ViewData.ModelState.IsValid)
+                {
+                    <div asp-validation-summary="All" class="pro-validation-summary"></div>
+                }
+
+                <div class="pro-form-group">
+                    <label asp-for="Email" class="pro-label">
+                        <span class="material-icons">email</span>Địa chỉ Email
+                    </label>
+                    <!-- Email is purely readonly -->
+                    <input asp-for="Email" class="pro-input pro-input--readonly" readonly />
+                </div>
+
+                <div class="pro-form-group" style="margin-bottom: 0;">
+                    <label asp-for="UserName" class="pro-label">
+                        <span class="material-icons">badge</span>Tên đăng nhập
+                    </label>
+                    <input asp-for="UserName" class="pro-input" placeholder="Nhập tên đăng nhập mới..." autocomplete="off" />
+                    <span asp-validation-for="UserName" class="pro-field-error"></span>
+                    <small style="color: #888; font-size: 12px; margin-top: 6px; display: block;">
+                        Tên đăng nhập là định danh của bạn khi đăng nhập và phải là duy nhất.
+                    </small>
+                </div>
+
+            </div>
+
+            <div class="profile-card__footer">
+                <!-- If we wanted a cancel/back button we could redirect to Dashboard -->
+                <a href="/ServiceRequests/Dashboard" class="pro-btn pro-btn--ghost">Trở về</a>
+                <button type="submit" class="pro-btn pro-btn--primary">
+                    <span class="material-icons">save</span>Lưu cập nhật
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
