@@ -1,4 +1,5 @@
 using ASC.Business.Interfaces;
+using ASC.Model.BaseTypes;
 using ASC.Model.Models;
 using ASC.Utilities.Extensions;
 using ASCwed.Cofiguration;
@@ -81,7 +82,9 @@ namespace ASCwed.ServiceHub
         private async Task UpdateServiceRequestClientsAsync(ServiceRequest serviceRequest)
         {
             var adminEmail = _options.Value.AdminEmail ?? string.Empty;
-            var engineerEmail = serviceRequest.ServiceEngineer ?? string.Empty;
+            var engineerEmail = string.IsNullOrWhiteSpace(serviceRequest.ServiceEngineer)
+                ? _options.Value.EngineerEmail ?? string.Empty
+                : serviceRequest.ServiceEngineer;
             var customerEmail = serviceRequest.PartitionKey;
 
             var isAdminOnline = await _onlineUsersOperations.GetOnlineUserAsync(adminEmail);
@@ -105,7 +108,9 @@ namespace ASCwed.ServiceHub
 
             return IsSameEmail(currentEmail, adminEmail)
                 || IsSameEmail(currentEmail, serviceRequest.PartitionKey)
-                || IsSameEmail(currentEmail, serviceRequest.ServiceEngineer);
+                || IsSameEmail(currentEmail, serviceRequest.ServiceEngineer)
+                || (Context.User?.IsInRole(Roles.Engineer.ToString()) == true
+                    && string.IsNullOrWhiteSpace(serviceRequest.ServiceEngineer));
         }
 
         private static bool IsSameEmail(string? firstEmail, string? secondEmail)

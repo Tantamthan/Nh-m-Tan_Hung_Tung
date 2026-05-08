@@ -16,6 +16,7 @@ namespace ASC.Business.Interfaces
             DateTime? requestedDate,
             List<string>? status = null,
             string email = "",
-            string serviceEngineerEmail = "");
+            string serviceEngineerEmail = "",
+            bool includeUnassignedEngineerRequests = false);
     }
 }

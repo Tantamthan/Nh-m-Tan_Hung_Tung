@@ -47,3 +47,6 @@ E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.Utilities\obj\Debug\net8.0\ASC.Utilit
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.Utilities\obj\Debug\net8.0\refint\ASC.Utilities.dll
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.Utilities\obj\Debug\net8.0\ASC.Utilities.pdb
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.Utilities\obj\Debug\net8.0\ref\ASC.Utilities.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.Utilities.deps.json
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.Utilities.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.Utilities.pdb

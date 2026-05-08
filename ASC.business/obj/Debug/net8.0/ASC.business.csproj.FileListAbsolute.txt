@@ -75,3 +75,6 @@ E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.busines
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\refint\ASC.business.dll
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ASC.business.pdb
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.business\obj\Debug\net8.0\ref\ASC.business.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.business.deps.json
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.business.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.business.pdb

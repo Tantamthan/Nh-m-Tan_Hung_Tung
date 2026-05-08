@@ -47,3 +47,6 @@ E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\ASC.Model.dll
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\refint\ASC.Model.dll
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\ASC.Model.pdb
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.Model\obj\Debug\net8.0\ref\ASC.Model.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.Model.deps.json
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.Model.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.Model.pdb

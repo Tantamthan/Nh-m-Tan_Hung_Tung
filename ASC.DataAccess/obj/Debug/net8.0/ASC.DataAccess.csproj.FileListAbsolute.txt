@@ -67,3 +67,6 @@ E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.DataAccess\obj\Debug\net8.0\ASC.DataA
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.DataAccess\obj\Debug\net8.0\refint\ASC.DataAccess.dll
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.DataAccess\obj\Debug\net8.0\ASC.DataAccess.pdb
 E:\project Wed\Nh-m-Tan_Hung_Tung-main\ASC.DataAccess\obj\Debug\net8.0\ref\ASC.DataAccess.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.DataAccess.deps.json
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.DataAccess.dll
+E:\project Wed\Nh-m-Tan_Hung_Tung-main\.codex_tmp\build-out\ASC.DataAccess.pdb

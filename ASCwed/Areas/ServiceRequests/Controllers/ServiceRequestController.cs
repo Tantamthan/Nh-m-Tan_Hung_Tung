@@ -72,7 +72,7 @@ namespace ASCwed.Areas.ServiceRequests.Controllers
             serviceRequest.RowKey = Guid.NewGuid().ToString();
             serviceRequest.RequestedDate = request.RequestedDate;
             serviceRequest.Status = Status.New.ToString();
-            serviceRequest.ServiceEngineer = string.Empty;
+            serviceRequest.ServiceEngineer = _options.Value.EngineerEmail ?? string.Empty;
             serviceRequest.CreatedBy = currentUser.UserName;
             serviceRequest.UpdatedBy = currentUser.UserName;
 
@@ -137,6 +137,11 @@ namespace ASCwed.Areas.ServiceRequests.Controllers
             await _serviceRequestMessageOperations.CreateServiceRequestMessageAsync(serviceRequestMessage);
 
             var recipients = await GetServiceRequestRecipientUserIdsAsync(serviceRequest);
+            if (!recipients.Contains(currentUser.Id))
+            {
+                recipients.Add(currentUser.Id);
+            }
+
             await _hubContext.Clients.Users(recipients).SendAsync("ReceiveMessage", serviceRequestMessage);
 
             return Json(true);
@@ -183,7 +188,8 @@ namespace ASCwed.Areas.ServiceRequests.Controllers
 
             return IsSameEmail(currentUser.Email, adminEmail)
                 || IsSameEmail(currentUser.Email, serviceRequest.PartitionKey)
-                || IsSameEmail(currentUser.Email, serviceRequest.ServiceEngineer);
+                || IsSameEmail(currentUser.Email, serviceRequest.ServiceEngineer)
+                || (currentUser.IsInRole(Roles.Engineer.ToString()) && string.IsNullOrWhiteSpace(serviceRequest.ServiceEngineer));
         }
 
         private async Task<List<string>> GetServiceRequestRecipientUserIdsAsync(ServiceRequest serviceRequest)

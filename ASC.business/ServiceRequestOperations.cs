@@ -68,9 +68,15 @@ namespace ASC.Business
             DateTime? requestedDate,
             List<string>? status = null,
             string email = "",
-            string serviceEngineerEmail = "")
+            string serviceEngineerEmail = "",
+            bool includeUnassignedEngineerRequests = false)
         {
-            var query = Queries.GetDashboardQuery(requestedDate, status, email, serviceEngineerEmail);
+            var query = Queries.GetDashboardQuery(
+                requestedDate,
+                status,
+                email,
+                serviceEngineerEmail,
+                includeUnassignedEngineerRequests);
             var serviceRequests = await _unitOfWork.Repository<ServiceRequest>().FindAllByQuery(query);
             return serviceRequests.ToList();
         }

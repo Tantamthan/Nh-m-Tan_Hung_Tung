@@ -43,7 +43,8 @@ namespace ASCwed.Areas.ServiceRequests.Controllers
                     .GetServiceRequestsByRequestedDateAndStatus(
                         DateTime.UtcNow.AddDays(-7),
                         status,
-                        serviceEngineerEmail: currentUser.Email);
+                        serviceEngineerEmail: currentUser.Email,
+                        includeUnassignedEngineerRequests: true);
             }
             else
             {

@@ -9,7 +9,8 @@ namespace ASC.Model.Queries
             DateTime? requestedDate,
             List<string>? status = null,
             string email = "",
-            string serviceEngineerEmail = "")
+            string serviceEngineerEmail = "",
+            bool includeUnassignedEngineerRequests = false)
         {
             Expression<Func<ServiceRequest, bool>> query = serviceRequest => !serviceRequest.IsDeleted;
 
@@ -25,7 +26,16 @@ namespace ASC.Model.Queries
 
             if (!string.IsNullOrWhiteSpace(serviceEngineerEmail))
             {
-                query = And(query, serviceRequest => serviceRequest.ServiceEngineer == serviceEngineerEmail);
+                if (includeUnassignedEngineerRequests)
+                {
+                    query = And(query, serviceRequest =>
+                        serviceRequest.ServiceEngineer == serviceEngineerEmail
+                        || serviceRequest.ServiceEngineer == string.Empty);
+                }
+                else
+                {
+                    query = And(query, serviceRequest => serviceRequest.ServiceEngineer == serviceEngineerEmail);
+                }
             }
 
             if (status != null && status.Count > 0)
